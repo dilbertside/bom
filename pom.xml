@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.1</version>
+  <version>5.1.5</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR6/reference/htmlsingle/)
@@ -26,9 +26,6 @@
       <url>https://github.com/dilbertside</url>
     </developer>
   </developers>
-  <prerequisites>
-    <maven>3.5.0</maven>
-  </prerequisites>
   <scm>
     <connection>scm:git://git@github.com:dilbertside/bom.git</connection>
     <developerConnection>scm:git://git@github.com:dilbertside/bom.git</developerConnection>
@@ -314,6 +311,7 @@
     <mariadb.version>2.3.0</mariadb.version>
     <maven-android-plugin>4.5.0</maven-android-plugin>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+    <maven-archetype-plugin.version>3.0.1</maven-archetype-plugin.version>
     <maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
     <maven-checkstyle-config-location>../bom/checkstyle.xml</maven-checkstyle-config-location>
     <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
@@ -336,6 +334,7 @@
     <maven-pmd-plugin.version>3.10.0</maven-pmd-plugin.version>
     <maven-processor-plugin.version>3.1.0</maven-processor-plugin.version>
     <maven-project-info-reports-plugin.version>2.6</maven-project-info-reports-plugin.version>
+    <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
     <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
     <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
@@ -445,13 +444,14 @@
     <spring-cloud-releasetrain.version>Finchley.SR2</spring-cloud-releasetrain.version>
     <spring-cloud-stream-releasetrain.version>Elmhurst.RELEASE</spring-cloud-stream-releasetrain.version>
     <spring-cloud-stream.version>2.0.2.RELEASE</spring-cloud-stream.version>
-    <spring-cloud-task.version>2.0.0.RELEASE</spring-cloud-task.version>
+    <spring-cloud-task.version>2.1.0.RC1</spring-cloud-task.version>
     <spring-cloud.version>Greenwich.M3</spring-cloud.version>
     <spring-data-commons.version>2.1.4.RELEASE</spring-data-commons.version>
     <spring-data-elasticsearch.version>3.1.4.RELEASE</spring-data-elasticsearch.version>
     <spring-data-jpa.version>2.1.4.RELEASE</spring-data-jpa.version>
     <spring-data-keyvalue.version>2.1.4.RELEASE</spring-data-keyvalue.version>
     <spring-data-neo4j.version>5.1.4.RELEASE</spring-data-neo4j.version>
+    <spring-data-r2dbc.version>1.0.0.M1</spring-data-r2dbc.version>
     <spring-data-releasetrain.version>Lovelace-SR4</spring-data-releasetrain.version>
     <spring-framework.version>${spring.version}</spring-framework.version>
     <spring-hateoas.version>0.25.0.RELEASE</spring-hateoas.version>
@@ -2892,6 +2892,11 @@
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-neo4j</artifactId>
         <version>${spring-data-neo4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-r2dbc</artifactId>
+        <version>${spring-data-r2dbc.version}</version>
       </dependency>
 
       <dependency>
