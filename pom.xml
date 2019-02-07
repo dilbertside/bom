@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.6</version>
+  <version>5.1.7</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -166,6 +166,7 @@
     <hazelcast-hibernate5.version>1.2.3</hazelcast-hibernate5.version>
     <hazelcast.version>3.11.1</hazelcast.version>
     <hbase.version>0.96.2-hadoop2</hbase.version>
+    <heroku-maven-plugin.version>2.0.6</heroku-maven-plugin.version>
     <hessian.version>4.0.51</hessian.version>
     <hibernate-validator.version>6.0.14.Final</hibernate-validator.version>
     <hibernate.version>5.4.0.Final</hibernate.version>
@@ -827,6 +828,11 @@
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
         <version>${h2.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.heroku.sdk</groupId>
+        <artifactId>heroku-maven-plugin</artifactId>
+        <version>${heroku-maven-plugin.version}</version>
       </dependency>
       <dependency>
         <groupId>com.ibm.jbatch</groupId>
@@ -2423,11 +2429,11 @@
             <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
           </exclusion>
-          <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#commons-logging-setup 
-          <exclusion>
+          <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#commons-logging-setup
+            <exclusion>
             <artifactId>spring-jcl</artifactId>
             <groupId>org.springframework</groupId>
-          </exclusion>
+            </exclusion>
           -->
         </exclusions>
       </dependency>
@@ -2863,7 +2869,7 @@
         <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
-      </dependency> -->
+        </dependency> -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
@@ -3071,18 +3077,18 @@
         <version>${spring-restdocs.version}</version>
       </dependency>
       <!-- Spring Cloud
-      <dependency>
+        <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-cloudfoundry-connector</artifactId>
-      </dependency>
-      <dependency>
+        </dependency>
+        <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-spring-service-connector</artifactId>
-      </dependency>
-      <dependency>
+        </dependency>
+        <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-localconfig-connector</artifactId>
-      </dependency>
+        </dependency>
       -->
       <dependency>
         <groupId>org.springframework.security</groupId>
@@ -3426,7 +3432,7 @@
       <id>neo4j</id>
       <name>Neo4j</name>
       <url>http://m2.neo4j.org/</url>
-    </repository -->
+      </repository -->
     <repository>
       <snapshots>
         <enabled>true</enabled>
@@ -3631,6 +3637,15 @@
           </configuration>
         </plugin>
         <plugin>
+          <!-- https://github.com/heroku/heroku-maven-plugin -->
+          <groupId>com.heroku.sdk</groupId>
+          <artifactId>heroku-maven-plugin</artifactId>
+          <version>${heroku-maven-plugin.version}</version>
+          <configuration>
+            <appName>${project.artifactId}</appName>
+          </configuration>
+        </plugin>
+        <plugin>
           <groupId>com.lazerycode.jmeter</groupId>
           <artifactId>jmeter-maven-plugin</artifactId>
           <version>${jmeter-maven-plugin.version}</version>
@@ -3728,7 +3743,7 @@
           <artifactId>docker-maven-plugin</artifactId>
           <version>${docker-maven-plugin.version}</version>
           <configuration>
-            <!-- artifactId name cannot be uppercase,  https://github.com/spotify/docker-maven-plugin/issues/71 -->
+            <!-- artifactId name cannot be uppercase, https://github.com/spotify/docker-maven-plugin/issues/71 -->
             <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
             <!-- <dockerDirectory>src/main/docker</dockerDirectory> -->
             <dockerDirectory>${basedir}/target/generated-docker</dockerDirectory>
@@ -3895,18 +3910,18 @@
                 <version>${spring.version}</version>
               </path>
               <!--
-              <path>
+                <path>
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
-              </path>
+                </path>
               -->
-              <!-- For JPA static metamodel generation 
-              <path>
+              <!-- For JPA static metamodel generation
+                <path>
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-jpamodelgen</artifactId>
                 <version>${hibernate.version}</version>
-              </path>
+                </path>
               -->
             </annotationProcessorPaths>
           </configuration>
@@ -3979,12 +3994,12 @@
               </bannedDependencies>
               <requireMavenVersion>
                 <message>You are running an older version of Maven.
-                ${project.artifactId} requires at least Maven 3.5.x</message>
+                  ${project.artifactId} requires at least Maven 3.5.x</message>
                 <version>[3.5.0,)</version>
               </requireMavenVersion>
               <requireJavaVersion>
                 <message>You are running an older version of Java.
-                ${project.artifactId} requires at least JDK ${java.version}</message>
+                  ${project.artifactId} requires at least JDK ${java.version}</message>
                 <version>[${java.version}.0,)</version>
               </requireJavaVersion>
             </rules>
@@ -4074,7 +4089,7 @@
             </execution>
             <execution>
               <id>process-resources</id>
-              <!-- here the phase same as  project.build.resources tag-->
+              <!-- here the phase same as project.build.resources tag -->
               <phase>process-resources</phase>
               <goals>
                 <goal>resources</goal>
@@ -4192,7 +4207,8 @@
             <argLine>-ea
               --add-opens java.base/java.lang=spring.core
               --add-opens java.base/java.util=ALL-UNNAMED
-              --add-opens java.base/java.lang.reflect=ALL-UNNAMED
+              --add-opens
+              java.base/java.lang.reflect=ALL-UNNAMED
               --add-opens java.base/java.text=ALL-UNNAMED
               --add-opens java.desktop/java.awt.font=ALL-UNNAMED
               --illegal-access=permit</argLine>
@@ -4347,8 +4363,8 @@
             <executable>true</executable>
             <fork>true</fork>
             <!--
-            Enable the line below to have remote debugging of your application on port 5005
-            <jvmArguments>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments>
+              Enable the line below to have remote debugging of your application on port 5005
+              <jvmArguments>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments>
             -->
             <profiles>
               <!-- http://docs.spring.io/spring-boot/docs/1.4.2.RELEASE/maven-plugin/examples/run-profiles.html -->
