@@ -82,7 +82,7 @@
     <cglib.version>3.2.10</cglib.version>
     <checkstyle.version>8.8</checkstyle.version>
     <classmate.version>1.4.0</classmate.version>
-    <cobertura.version>2.7</cobertura.version>
+    <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
     <commonj.version>1.1.1</commonj.version>
     <commons-beanutils.version>1.9.3</commons-beanutils.version>
     <commons-cli.version>1.4</commons-cli.version>
@@ -190,7 +190,7 @@
     <jackson-datatype-json-org.version>2.9.8</jackson-datatype-json-org.version>
     <jackson.version>2.9.8</jackson.version>
     <jackson1.version>1.9.13</jackson1.version>
-    <jacoco-maven-plugin.version>0.8.1</jacoco-maven-plugin.version>
+    <jacoco-maven-plugin.version>0.8.3</jacoco-maven-plugin.version>
     <jamon.version>2.4</jamon.version>
     <janino.version>3.0.11</janino.version>
     <jasmine-maven-plugin.version>2.0</jasmine-maven-plugin.version>
@@ -320,7 +320,6 @@
     <maven-checkstyle-suppressions-location>../bom/checkstyle-suppressions.xml</maven-checkstyle-suppressions-location>
     <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
     <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-    <maven-coveralls-plugin.version>4.3.0</maven-coveralls-plugin.version>
     <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
@@ -4287,7 +4286,7 @@
         <plugin>
           <groupId>org.eluder.coveralls</groupId>
           <artifactId>coveralls-maven-plugin</artifactId>
-          <version>${maven-coveralls-plugin.version}</version>
+          <version>${coveralls-maven-plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.jooq</groupId>
