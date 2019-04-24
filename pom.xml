@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.10</version>
+  <version>5.1.11</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -87,7 +87,7 @@
     <bsh.version>2.0b5</bsh.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <byte-buddy.version>1.9.12</byte-buddy.version>
-    <c3p0.version>0.9.5.2</c3p0.version>
+    <c3p0.version>0.9.5.4</c3p0.version>
     <caffeine.version>2.7.0</caffeine.version>
     <camel-spring-boot-starter.version>2.17.3</camel-spring-boot-starter.version>
     <cas-client.version>3.4.1</cas-client.version>
@@ -434,7 +434,7 @@
     <rxjava2.version>2.2.8</rxjava2.version>
     <saaj-impl.version>1.5.0</saaj-impl.version>
     <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
-    <scala.version>2.12.1</scala.version>
+    <scala.version>2.12</scala.version>
     <sd-dss.version>5.4</sd-dss.version>
     <selenium-htmlunit-driver.version>2.53.1</selenium-htmlunit-driver.version>
     <selenium-htmlunit.version>2.34.0</selenium-htmlunit.version>
@@ -452,6 +452,7 @@
     <soap-api.version>1.4.0</soap-api.version>
     <solr.version>8.0.0</solr.version>
     <sonar-maven-plugin.version>3.2</sonar-maven-plugin.version>
+    <spark.version>2.4.1</spark.version>
     <splunk.version>1.3.0</splunk.version>
     <spock.version>1.0-groovy-2.4</spock.version>
     <spring-amqp.version>2.1.5.RELEASE</spring-amqp.version>
@@ -516,6 +517,7 @@
     <sun-saaj.version>1.3.25</sun-saaj.version>
     <surefire.reportplugin.version>2.18.1</surefire.reportplugin.version>
     <taglibs-standard.version>1.2.5</taglibs-standard.version>
+    <testcontainers.version>1.11.1</testcontainers.version>
     <testng.version>6.14.2</testng.version>
     <threetenbp.version>1.3.6</threetenbp.version>
     <thymeleaf-extras-conditionalcomments.version>2.1.2.RELEASE</thymeleaf-extras-conditionalcomments.version>
@@ -568,7 +570,6 @@
 
   <dependencyManagement>
     <dependencies>
-
       <dependency>
         <groupId>aopalliance</groupId>
         <artifactId>aopalliance</artifactId>
@@ -1796,6 +1797,37 @@
         <groupId>org.apache.solr</groupId>
         <artifactId>solr-core</artifactId>
         <version>${solr.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-core_${scala.version}</artifactId>
+        <version>${spark.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-mllib_${scala.version}</artifactId>
+        <version>${spark.version}</version>
+        <exclusions>
+          <exclusion>
+            <artifactId>slf4j-log4j12</artifactId>
+            <groupId>org.slf4j</groupId>
+          </exclusion>
+          <exclusion>
+            <artifactId>slf4j-simple</artifactId>
+            <groupId>org.slf4j</groupId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-sql_${scala.version}</artifactId>
+        <version>${spark.version}</version>
+        <exclusions>
+          <exclusion>
+            <artifactId>slf4j-simple</artifactId>
+            <groupId>org.slf4j</groupId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.taglibs</groupId>
@@ -3352,6 +3384,16 @@
         <groupId>org.springframework.ws</groupId>
         <artifactId>spring-xml</artifactId>
         <version>${spring-web-services.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>${testcontainers.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>testcontainers</artifactId>
+        <version>${testcontainers.version}</version>
       </dependency>
       <dependency>
         <groupId>org.testng</groupId>
