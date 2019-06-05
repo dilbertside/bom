@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.11</version>
+  <version>5.1.12</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -199,10 +199,10 @@
     <infinispan.version>9.4.13.Final</infinispan.version>
     <influxdb-java.version>2.15</influxdb-java.version>
     <itext.version>2.1.7</itext.version>
-    <jackson-dataformat-csv.version>2.9.8</jackson-dataformat-csv.version>
-    <jackson-datatype-hibernate4.version>2.9.8</jackson-datatype-hibernate4.version>
-    <jackson-datatype-json-org.version>2.9.8</jackson-datatype-json-org.version>
-    <jackson.version>2.9.8</jackson.version>
+    <jackson-dataformat-csv.version>2.9.9</jackson-dataformat-csv.version>
+    <jackson-datatype-hibernate4.version>2.9.9</jackson-datatype-hibernate4.version>
+    <jackson-datatype-json-org.version>2.9.9</jackson-datatype-json-org.version>
+    <jackson.version>2.9.9</jackson.version>
     <jackson1.version>1.9.13</jackson1.version>
     <jacoco-maven-plugin.version>0.8.3</jacoco-maven-plugin.version>
     <jakarta-mail.version>1.6.3</jakarta-mail.version>
@@ -564,7 +564,7 @@
     <yammer-metrics.version>2.2.0</yammer-metrics.version>
     <yarn.version>1.12.3</yarn.version>
     <yuicompressor.version>2.4.8</yuicompressor.version>
-    <zookeeper.version>3.4.8</zookeeper.version>
+    <zookeeper.version>3.4.14</zookeeper.version>
     <zxing.version>3.3.3</zxing.version>
   </properties>
 
