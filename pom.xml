@@ -489,7 +489,7 @@
     <spring-restdocs.version>2.0.3.RELEASE</spring-restdocs.version>
     <spring-retry.version>1.2.4.RELEASE</spring-retry.version>
     <spring-security-jwt.version>1.0.9.RELEASE</spring-security-jwt.version>
-    <spring-security-oauth.version>2.3.5.RELEASE</spring-security-oauth.version>
+    <spring-security-oauth.version>2.3.6.RELEASE</spring-security-oauth.version>
     <spring-security-saml.version>1.0.4.RELEASE</spring-security-saml.version>
     <spring-security.version>5.1.5.RELEASE</spring-security.version>
     <spring-session-bom.version>Bean-SR5</spring-session-bom.version>
@@ -4764,9 +4764,14 @@
             <artifactId>flatten-maven-plugin</artifactId>
           </plugin>
           <plugin>
+            <!-- https://jeremylong.github.io/DependencyCheck/dependency-check-maven/index.html -->
+            <!-- to run
+             mvn org.owasp:dependency-check-maven:check 
+             or 
+             mvn verify -->
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-maven</artifactId>
-            <version>3.1.2</version>
+            <version>4.0.2</version>
             <executions>
               <execution>
                 <goals>
