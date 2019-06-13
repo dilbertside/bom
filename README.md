@@ -67,7 +67,7 @@ To use it in your Maven build add:
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.1.11</version>
+    <version>5.1.12</version>
     <relativePath></relativePath>
   </parent>
 ```
