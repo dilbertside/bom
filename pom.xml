@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.12</version>
+  <version>5.1.13</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -264,7 +264,7 @@
     <jetty-reactive-httpclient.version>1.0.3</jetty-reactive-httpclient.version>
     <jetty.version>9.4.18.v20190429</jetty.version>
     <jfreechart.version>1.0.19</jfreechart.version>
-    <jib-maven-plugin.version>0.10.1</jib-maven-plugin.version>
+    <jib-maven-plugin.version>1.3.0</jib-maven-plugin.version>
     <jibx.version>1.2.6</jibx.version>
     <jjwt.version>0.7.0</jjwt.version>
     <jline.version>2.14.6</jline.version>
