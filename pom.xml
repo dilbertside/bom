@@ -61,7 +61,7 @@
     <aopalliance.version>1.0</aopalliance.version>
     <apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
     <apacheds.version>1.5.5</apacheds.version>
-    <appengine-sdk.version>1.9.74</appengine-sdk.version>
+    <appengine-sdk.version>1.9.75</appengine-sdk.version>
     <appengine.version>1.9.64</appengine.version>
     <apt-maven-plugin.version>1.1.3</apt-maven-plugin.version>
     <artemis.version>2.6.4</artemis.version>
@@ -86,7 +86,7 @@
     <bouncycastle.version>1.61</bouncycastle.version>
     <bsh.version>2.0b5</bsh.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
-    <byte-buddy.version>1.9.12</byte-buddy.version>
+    <byte-buddy.version>1.9.13</byte-buddy.version>
     <c3p0.version>0.9.5.4</c3p0.version>
     <caffeine.version>2.7.0</caffeine.version>
     <camel-spring-boot-starter.version>2.17.3</camel-spring-boot-starter.version>
@@ -106,9 +106,10 @@
     <commons-configuration.version>1.6</commons-configuration.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <commons-dbcp2.version>2.6.0</commons-dbcp2.version>
+    <commons-dbs.version>1.0.0</commons-dbs.version>
     <commons-digester.version>2.1</commons-digester.version>
     <commons-fileupload.version>1.4</commons-fileupload.version>
-    <commons-httpclient.version>4.5.8</commons-httpclient.version>
+    <commons-httpclient.version>4.5.9</commons-httpclient.version>
     <commons-io.version>2.6</commons-io.version>
     <commons-lang.version>2.6</commons-lang.version>
     <commons-lang3.version>3.9</commons-lang3.version>
@@ -117,11 +118,12 @@
     <commons-pool.version>1.6</commons-pool.version>
     <commons-pool2.version>2.6.2</commons-pool2.version>
     <couchbase-cache-client.version>2.1.0</couchbase-cache-client.version>
-    <couchbase-client.version>2.7.4</couchbase-client.version>
+    <couchbase-client.version>2.7.7</couchbase-client.version>
     <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
     <crashub.version>1.3.2</crashub.version>
     <cucumber.version>1.2.4</cucumber.version>
     <curator.version>2.12.0</curator.version>
+    <dependency-management-plugin.version>1.0.8.RELEASE</dependency-management-plugin.version>
     <derby.version>10.14.2.0</derby.version>
     <docker-client.version>8.14.2</docker-client.version>
     <docker-maven-plugin.version>0.4.14</docker-maven-plugin.version>
@@ -182,7 +184,7 @@
     <hbase.version>0.96.2-hadoop2</hbase.version>
     <heroku-maven-plugin.version>2.0.6</heroku-maven-plugin.version>
     <hessian.version>4.0.51</hessian.version>
-    <hibernate-validator.version>6.0.16.Final</hibernate-validator.version>
+    <hibernate-validator.version>6.0.17.Final</hibernate-validator.version>
     <hibernate.version>5.4.0.Final</hibernate.version>
     <hikaricp-java7.version>2.4.13</hikaricp-java7.version>
     <hikaricp.version>3.3.1</hikaricp.version>
@@ -196,7 +198,7 @@
     <httpmime.version>4.5.5</httpmime.version>
     <hystrix-dashboard.version>1.5.5</hystrix-dashboard.version>
     <ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
-    <infinispan.version>9.4.13.Final</infinispan.version>
+    <infinispan.version>9.4.15.Final</infinispan.version>
     <influxdb-java.version>2.15</influxdb-java.version>
     <itext.version>2.1.7</itext.version>
     <jackson-dataformat-csv.version>2.9.9</jackson-dataformat-csv.version>
@@ -215,7 +217,7 @@
     <javax-activation.version>1.2.0</javax-activation.version>
     <javax-annotation.version>1.3.2</javax-annotation.version>
     <javax-batch.version>1.0.1</javax-batch.version>
-    <javax-cache.version>1.1.0</javax-cache.version>
+    <javax-cache.version>1.1.1</javax-cache.version>
     <javax-cdi.version>1.2</javax-cdi.version>
     <javax-connector.version>1.5</javax-connector.version>
     <javax-ejb.version>3.2</javax-ejb.version>
@@ -248,7 +250,7 @@
     <javax.mail-api.version>1.5.6</javax.mail-api.version>
     <jaxb-api.version>2.3.1</jaxb-api.version>
     <jaxen.version>1.1.6</jaxen.version>
-    <jaybird.version>3.0.5</jaybird.version>
+    <jaybird.version>3.0.6</jaybird.version>
     <jbatch-tck.version>1.0</jbatch-tck.version>
     <jboss-logging.version>3.3.2.Final</jboss-logging.version>
     <jboss-transaction-spi.version>7.6.0.Final</jboss-transaction-spi.version>
@@ -262,7 +264,7 @@
     <jetty-el.version>8.5.40</jetty-el.version>
     <jetty-jsp.version>2.2.0.v201112011158</jetty-jsp.version>
     <jetty-reactive-httpclient.version>1.0.3</jetty-reactive-httpclient.version>
-    <jetty.version>9.4.18.v20190429</jetty.version>
+    <jetty.version>9.4.19.v20190610</jetty.version>
     <jfreechart.version>1.0.19</jfreechart.version>
     <jib-maven-plugin.version>1.3.0</jib-maven-plugin.version>
     <jibx.version>1.2.6</jibx.version>
@@ -275,7 +277,7 @@
     <joda-money.version>0.10.0</joda-money.version>
     <joda-time.version>2.10.2</joda-time.version>
     <!-- Deprecated in favor of "johnzon.version" -->
-    <johnzon-jsonb.version>1.1.11</johnzon-jsonb.version>
+    <johnzon-jsonb.version>1.1.12</johnzon-jsonb.version>
     <johnzon.version>${johnzon-jsonb.version}</johnzon.version>
     <jolokia.version>1.6.1</jolokia.version>
     <jooq.version>3.11.11</jooq.version>
@@ -307,7 +309,7 @@
     <kryo.version>3.0.3</kryo.version>
     <ldapbp.version>1.0</ldapbp.version>
     <ldapsdk.version>4.1</ldapsdk.version>
-    <lettuce.version>5.1.6.RELEASE</lettuce.version>
+    <lettuce.version>5.1.7.RELEASE</lettuce.version>
     <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
     <linkuriousjs.version>1.4.0</linkuriousjs.version>
     <liquibase-hibernate4.version>3.5</liquibase-hibernate4.version>
@@ -359,14 +361,14 @@
     <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <maven-tomcat-plugin.version>2.1</maven-tomcat-plugin.version>
-    <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
+    <maven-war-plugin.version>3.2.3</maven-war-plugin.version>
     <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.version.range>[3.5,)</maven.version.range>
     <metrics-spark-reporter.version>1.2</metrics-spark-reporter.version>
     <metrics-spring.version>3.2.6</metrics-spring.version>
-    <micrometer.version>1.1.4</micrometer.version>
+    <micrometer.version>1.1.5</micrometer.version>
     <mimepull.version>1.9.11</mimepull.version>
     <mockito.version>2.25.0</mockito.version>
     <mongo-driver-reactivestreams.version>1.11.0</mongo-driver-reactivestreams.version>
@@ -378,7 +380,7 @@
     <narayana.version>5.7.1.Final</narayana.version>
     <nekohtml.version>1.9.22</nekohtml.version>
     <neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
-    <neo4j-ogm.version>3.1.9</neo4j-ogm.version>
+    <neo4j-ogm.version>3.1.11</neo4j-ogm.version>
     <neo4j-spatial.version>0.13-neo4j-2.0.1</neo4j-spatial.version>
     <neo4j.version>2.3.2</neo4j.version>
     <netty-tcnative.version>2.0.25.Final</netty-tcnative.version>
@@ -400,7 +402,7 @@
     <phantomjs-maven-plugin.version>0.7</phantomjs-maven-plugin.version>
     <pig.version>0.12.1</pig.version>
     <poi.version>3.17</poi.version>
-    <pooled-jms-version>1.0.4</pooled-jms-version>
+    <pooled-jms-version>1.0.5</pooled-jms-version>
     <postgis-jdbc.version>2.2.1</postgis-jdbc.version>
     <postgresql.version>42.2.5</postgresql.version>
     <postgresql18.version>9.4-1208-jdbc42</postgresql18.version>
@@ -419,7 +421,7 @@
     <rabbit-amqp-client.version>5.6.0</rabbit-amqp-client.version>
     <rabbit-http-client.version>2.0.1.RELEASE</rabbit-http-client.version>
     <reactive-streams.version>1.0.2</reactive-streams.version>
-    <reactor-bom.version>Californium-SR8</reactor-bom.version>
+    <reactor-bom.version>Californium-SR9</reactor-bom.version>
     <reactor-spring.version>3.1.5.RELEASE</reactor-spring.version>
     <reactor.version>3.2.9.RELEASE</reactor.version>
     <redmine-java-api.version>2.6.0</redmine-java-api.version>
@@ -431,7 +433,7 @@
     <run.addResources>false</run.addResources>
     <rxjava-adapter.version>1.2.1</rxjava-adapter.version>
     <rxjava.version>1.3.8</rxjava.version>
-    <rxjava2.version>2.2.8</rxjava2.version>
+    <rxjava2.version>2.2.9</rxjava2.version>
     <saaj-impl.version>1.5.0</saaj-impl.version>
     <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
     <scala.version>2.12</scala.version>
@@ -455,11 +457,11 @@
     <spark.version>2.4.1</spark.version>
     <splunk.version>1.3.0</splunk.version>
     <spock.version>1.0-groovy-2.4</spock.version>
-    <spring-amqp.version>2.1.6.RELEASE</spring-amqp.version>
+    <spring-amqp.version>2.1.7.RELEASE</spring-amqp.version>
     <spring-android.version>2.0.0.M4</spring-android.version>
     <spring-batch.version>4.1.2.RELEASE</spring-batch.version>
     <spring-boot-admin.version>2.1.3</spring-boot-admin.version>
-    <spring-boot.version>2.1.5.RELEASE</spring-boot.version>
+    <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
     <spring-cloud-connectors.version>2.0.5.RELEASE</spring-cloud-connectors.version>
     <!-- https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Greenwich-Release-Notes -->
     <spring-cloud-releasetrain.version>Greenwich.SR1</spring-cloud-releasetrain.version>
@@ -467,21 +469,21 @@
     <spring-cloud-stream.version>2.0.2.RELEASE</spring-cloud-stream.version>
     <spring-cloud-task.version>2.1.1.RELEASE</spring-cloud-task.version>
     <spring-cloud.version>2.1.2.RELEASE</spring-cloud.version>
-    <spring-data-commons.version>2.1.8.RELEASE</spring-data-commons.version>
-    <spring-data-elasticsearch.version>3.1.8.RELEASE</spring-data-elasticsearch.version>
-    <spring-data-jpa.version>2.1.8.RELEASE</spring-data-jpa.version>
-    <spring-data-keyvalue.version>2.1.8.RELEASE</spring-data-keyvalue.version>
-    <spring-data-neo4j.version>5.1.8.RELEASE</spring-data-neo4j.version>
+    <spring-data-commons.version>2.1.9.RELEASE</spring-data-commons.version>
+    <spring-data-elasticsearch.version>3.1.9.RELEASE</spring-data-elasticsearch.version>
+    <spring-data-jpa.version>2.1.9.RELEASE</spring-data-jpa.version>
+    <spring-data-keyvalue.version>2.1.9.RELEASE</spring-data-keyvalue.version>
+    <spring-data-neo4j.version>5.1.9.RELEASE</spring-data-neo4j.version>
     <spring-data-r2dbc.version>1.0.0.M2</spring-data-r2dbc.version>
-    <spring-data-releasetrain.version>Lovelace-SR8</spring-data-releasetrain.version>
+    <spring-data-releasetrain.version>Lovelace-SR9</spring-data-releasetrain.version>
     <spring-framework.version>${spring.version}</spring-framework.version>
     <spring-hateoas.version>0.25.1.RELEASE</spring-hateoas.version>
     <spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
     <spring-integration-java-dsl.version>1.2.2.RELEASE</spring-integration-java-dsl.version>
     <spring-integration-kafka.version>2.1.1.RELEASE</spring-integration-kafka.version>
     <spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
-    <spring-integration.version>5.1.5.RELEASE</spring-integration.version>
-    <spring-kafka.version>2.2.6.RELEASE</spring-kafka.version>
+    <spring-integration.version>5.1.6.RELEASE</spring-integration.version>
+    <spring-kafka.version>2.2.7.RELEASE</spring-kafka.version>
     <spring-ldap.version>2.3.2.RELEASE</spring-ldap.version>
     <spring-loaded.version>1.2.8.RELEASE</spring-loaded.version>
     <spring-mobile.version>2.0.0.M3</spring-mobile.version>
@@ -492,7 +494,7 @@
     <spring-security-oauth.version>2.3.6.RELEASE</spring-security-oauth.version>
     <spring-security-saml.version>1.0.4.RELEASE</spring-security-saml.version>
     <spring-security.version>5.1.5.RELEASE</spring-security.version>
-    <spring-session-bom.version>Bean-SR5</spring-session-bom.version>
+    <spring-session-bom.version>Bean-SR6</spring-session-bom.version>
     <spring-session-data-mongodb.version>2.0.2.RELEASE</spring-session-data-mongodb.version>
     <spring-session.version>2.1.1.RELEASE</spring-session.version>
     <spring-shell.version>1.1.0.RELEASE</spring-shell.version>
@@ -505,7 +507,7 @@
     <spring-web-flow.version>2.5.0.RELEASE</spring-web-flow.version>
     <spring-web-services.version>${spring-ws.version}</spring-web-services.version>
     <spring-ws.version>3.0.6.RELEASE</spring-ws.version>
-    <spring.version>5.1.7.RELEASE</spring.version>
+    <spring.version>5.1.8.RELEASE</spring.version>
     <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
     <springfox.version>2.6.1</springfox.version>
     <spullara-redis.version>0.7</spullara-redis.version>
@@ -530,12 +532,12 @@
     <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
     <tiles-request.version>1.0.6</tiles-request.version>
     <tiles.version>3.0.7</tiles.version>
-    <tomcat.version>9.0.19</tomcat.version>
+    <tomcat.version>9.0.21</tomcat.version>
     <twilio.version>7.12.0</twilio.version>
     <typica.version>1.3</typica.version>
     <tyrus.version>1.3.5</tyrus.version>
-    <unboundid-ldapsdk.version>4.0.10</unboundid-ldapsdk.version>
-    <undertow.version>2.0.20.Final</undertow.version>
+    <unboundid-ldapsdk.version>4.0.11</unboundid-ldapsdk.version>
+    <undertow.version>2.0.21.Final</undertow.version>
     <uuid.version>3.2</uuid.version>
     <velocity-tools-view.version>1.4</velocity-tools-view.version>
     <velocity-tools.version>2.0</velocity-tools.version>
@@ -770,6 +772,11 @@
         <groupId>com.github.ben-manes.caffeine</groupId>
         <artifactId>jcache</artifactId>
         <version>${caffeine.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.dilbertside</groupId>
+        <artifactId>commons-dbs</artifactId>
+        <version>${commons-dbs.version}</version>
       </dependency>
       <dependency>
         <groupId>com.github.ekryd.sortpom</groupId>
@@ -1571,11 +1578,6 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
         <version>${commons-compress.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>${commons-lang3.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
