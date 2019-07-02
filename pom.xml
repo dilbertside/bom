@@ -464,10 +464,11 @@
     <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
     <spring-cloud-connectors.version>2.0.5.RELEASE</spring-cloud-connectors.version>
     <!-- https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Greenwich-Release-Notes -->
-    <spring-cloud-releasetrain.version>Greenwich.SR1</spring-cloud-releasetrain.version>
-    <spring-cloud-stream-releasetrain.version>Fishtown.RELEASE</spring-cloud-stream-releasetrain.version>
+    <spring-cloud-releasetrain.version>Greenwich.SR2</spring-cloud-releasetrain.version>
+    <spring-cloud-starter-open-service-broker.version>3.0.3.RELEASE</spring-cloud-starter-open-service-broker.version>
+    <spring-cloud-stream-releasetrain.version>Fishtown.SR3</spring-cloud-stream-releasetrain.version>
     <spring-cloud-stream.version>2.0.2.RELEASE</spring-cloud-stream.version>
-    <spring-cloud-task.version>2.1.1.RELEASE</spring-cloud-task.version>
+    <spring-cloud-task.version>2.1.2.RELEASE</spring-cloud-task.version>
     <spring-cloud.version>2.1.2.RELEASE</spring-cloud.version>
     <spring-data-commons.version>2.1.9.RELEASE</spring-data-commons.version>
     <spring-data-elasticsearch.version>3.1.9.RELEASE</spring-data-elasticsearch.version>
@@ -503,7 +504,7 @@
     <spring-social-linkedin.version>2.0.0.M3</spring-social-linkedin.version>
     <spring-social.version>2.0.0.M4</spring-social.version>
     <spring-statemachine.version>2.0.2.RELEASE</spring-statemachine.version>
-    <spring-vault.version>2.1.2.RELEASE</spring-vault.version>
+    <spring-vault.version>2.1.3.RELEASE</spring-vault.version>
     <spring-web-flow.version>2.5.0.RELEASE</spring-web-flow.version>
     <spring-web-services.version>${spring-ws.version}</spring-web-services.version>
     <spring-ws.version>3.0.6.RELEASE</spring-ws.version>
@@ -3018,6 +3019,11 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-open-service-broker</artifactId>
+        <version>${spring-cloud-starter-open-service-broker.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-open-service-broker-webmvc</artifactId>
         <version>2.0.1.RELEASE</version>
       </dependency>
@@ -4416,6 +4422,23 @@
           <groupId>org.eluder.coveralls</groupId>
           <artifactId>coveralls-maven-plugin</artifactId>
           <version>${coveralls-maven-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <!-- https://vladmihalcea.com/the-best-way-to-lazy-load-entity-attributes-using-jpa-and-hibernate/ -->
+          <groupId>org.hibernate.orm.tooling</groupId>
+          <artifactId>hibernate-enhance-maven-plugin</artifactId>
+          <version>${hibernate.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>enhance</goal>
+              </goals>
+              <configuration>
+                <failOnError>true</failOnError>
+                <enableLazyInitialization>true</enableLazyInitialization>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <groupId>org.jooq</groupId>
