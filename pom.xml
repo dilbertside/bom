@@ -121,6 +121,7 @@
     <couchbase-client.version>2.7.7</couchbase-client.version>
     <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
     <crashub.version>1.3.2</crashub.version>
+    <cucumber-jvm.version>4.4.0</cucumber-jvm.version>
     <cucumber.version>1.2.4</cucumber.version>
     <curator.version>2.12.0</curator.version>
     <dependency-check-maven.version>5.1.1</dependency-check-maven.version>
@@ -249,7 +250,7 @@
     <javax-websocket.version>1.1</javax-websocket.version>
     <javax.inject.version>1</javax.inject.version>
     <javax.mail-api.version>1.5.6</javax.mail-api.version>
-    <jaxb-api.version>2.3.2</jaxb-api.version>
+    <jaxb-api.version>2.3.1</jaxb-api.version>
     <jaxen.version>1.1.6</jaxen.version>
     <jaybird.version>3.0.6</jaybird.version>
     <jbatch-tck.version>1.0</jbatch-tck.version>
@@ -1223,6 +1224,11 @@
         <groupId>eu.europa.ec.joinup.sd-dss</groupId>
         <artifactId>dss-utils-apache-commons</artifactId>
         <version>${sd-dss.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>${cucumber-jvm.version}</version>
       </dependency>
       <dependency>
         <groupId>io.dropwizard.metrics</groupId>
