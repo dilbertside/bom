@@ -97,7 +97,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.1.13</version>
+    <version>5.1.14</version>
     <relativePath></relativePath>
   </parent>
 ```
