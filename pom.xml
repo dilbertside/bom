@@ -124,6 +124,7 @@
     <cucumber-jvm.version>4.4.0</cucumber-jvm.version>
     <cucumber.version>1.2.4</cucumber.version>
     <curator.version>2.12.0</curator.version>
+    <cxf.version>3.3.2</cxf.version>
     <dependency-check-maven.version>5.1.1</dependency-check-maven.version>
     <dependency-management-plugin.version>1.0.8.RELEASE</dependency-management-plugin.version>
     <derby.version>10.14.2.0</derby.version>
@@ -2364,6 +2365,11 @@
       </dependency>
       <dependency>
         <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct</artifactId>
+        <version>${mapstruct.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mapstruct</groupId>
         <artifactId>mapstruct-jdk8</artifactId>
         <version>${mapstruct.version}</version>
       </dependency>
@@ -2371,6 +2377,7 @@
         <groupId>org.mapstruct</groupId>
         <artifactId>mapstruct-processor</artifactId>
         <version>${mapstruct.version}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.messaginghub</groupId>
