@@ -106,7 +106,7 @@
     <commons-configuration.version>1.6</commons-configuration.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <commons-dbcp2.version>2.6.0</commons-dbcp2.version>
-    <commons-dbs.version>1.0.1</commons-dbs.version>
+    <commons-dbs.version>1.0.3</commons-dbs.version>
     <commons-digester.version>2.1</commons-digester.version>
     <commons-fileupload.version>1.4</commons-fileupload.version>
     <commons-httpclient.version>4.5.9</commons-httpclient.version>
@@ -124,7 +124,10 @@
     <cucumber-jvm.version>4.4.0</cucumber-jvm.version>
     <cucumber.version>1.2.4</cucumber.version>
     <curator.version>2.12.0</curator.version>
+    <cxf-plugin.version>3.3.0</cxf-plugin.version>
     <cxf.version>3.3.2</cxf.version>
+    <cxf.wsdl.filter>*.wsdl</cxf.wsdl.filter>
+    <cxf.wsdl.rootdir>${project.basedir}/src/main/resources/wsdl</cxf.wsdl.rootdir>
     <dependency-check-maven.version>5.1.1</dependency-check-maven.version>
     <dependency-management-plugin.version>1.0.8.RELEASE</dependency-management-plugin.version>
     <derby.version>10.14.2.0</derby.version>
@@ -1612,6 +1615,16 @@
         <version>${curator.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.cxf.xjc-utils</groupId>
+        <artifactId>cxf-xjc-runtime</artifactId>
+        <version>${cxf-plugin.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.cxf.xjcplugins</groupId>
+        <artifactId>cxf-xjc-ts</artifactId>
+        <version>${cxf-plugin.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.derby</groupId>
         <artifactId>derbyclient</artifactId>
         <version>${derby.version}</version>
@@ -2352,6 +2365,11 @@
         <groupId>org.junit.vintage</groupId>
         <artifactId>junit-vintage-engine</artifactId>
         <version>${junit-vintage.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jvnet.jaxb2_commons</groupId>
+        <artifactId>jaxb2-basics-annotate</artifactId>
+        <version>1.1.0</version>
       </dependency>
       <dependency>
         <groupId>org.liquibase</groupId>
@@ -3438,6 +3456,17 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.ws</groupId>
+        <artifactId>spring-ws-test</artifactId>
+        <version>${spring-ws.version}</version>
+        <exclusions>
+          <exclusion>
+            <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.ws</groupId>
         <artifactId>spring-xml</artifactId>
         <version>${spring-web-services.version}</version>
       </dependency>
@@ -4005,6 +4034,35 @@
             <username>${registry.api.username}</username>
             <password>${registry.api.password}</password>
           </configuration>
+        </plugin>
+        <plugin>
+          <!-- mvn clean generate-sources -->
+          <!-- config http://cxf.apache.org/docs/maven-cxf-codegen-plugin-wsdl-to-java.html -->
+          <groupId>org.apache.cxf</groupId>
+          <artifactId>cxf-codegen-plugin</artifactId>
+          <version>${cxf.version}</version>
+          <executions>
+            <execution>
+              <id>generate-sources</id>
+              <phase>generate-sources</phase>
+              <goals>
+                <goal>wsdl2java</goal>
+              </goals>
+              <configuration>
+                <defaultOptions>
+                  <bindingFiles>
+                    <bindingFile>${project.basedir}/src/main/resources/bindings/bindingx.xjb</bindingFile>
+                  </bindingFiles>
+                  <noAddressBinding>true</noAddressBinding>
+                </defaultOptions>
+                <sourceRoot>${project.build.directory}/generated-sources/cxf</sourceRoot>
+                <wsdlRoot>${cxf.wsdl.rootdir}</wsdlRoot>
+                <includes>
+                  <include>${cxf.wsdl.filter}</include>
+                </includes>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
