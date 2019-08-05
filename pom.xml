@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.16</version>
+  <version>5.1.17-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -149,7 +149,7 @@
     <ehcache.version>2.10.6</ehcache.version>
     <ehcache3.version>3.7.0</ehcache3.version>
     <el-impl.version>2.2.1-b05</el-impl.version>
-    <elasticsearch.version>6.6.1</elasticsearch.version>
+    <elasticsearch.version>6.8.1</elasticsearch.version>
     <embedded-mongo.version>2.2.0</embedded-mongo.version>
     <embeddedtc.version>2.12</embeddedtc.version>
     <evo-inflector.version>1.2.1</evo-inflector.version>
@@ -170,7 +170,7 @@
     <frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>
     <gatling-maven-plugin.version>2.2.1</gatling-maven-plugin.version>
     <gatling.version>2.2.3</gatling.version>
-    <gemfire.version>9.1.1</gemfire.version>
+    <gemfire.version>9.5.4</gemfire.version>
     <git-commit-id-plugin.version>2.2.6</git-commit-id-plugin.version>
     <glassfish-el.version>3.0.0</glassfish-el.version>
     <glassfish-jaxb.version>2.3.1</glassfish-jaxb.version>
@@ -316,7 +316,7 @@
     <kryo.version>3.0.3</kryo.version>
     <ldapbp.version>1.0</ldapbp.version>
     <ldapsdk.version>4.1</ldapsdk.version>
-    <lettuce.version>5.1.7.RELEASE</lettuce.version>
+    <lettuce.version>5.1.8.RELEASE</lettuce.version>
     <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
     <linkuriousjs.version>1.4.0</linkuriousjs.version>
     <liquibase-hibernate4.version>3.5</liquibase-hibernate4.version>
@@ -462,7 +462,7 @@
     <snappy.version>1.1.2.6</snappy.version>
     <snippetsDirectory>${project.build.directory}/generated-snippets</snippetsDirectory>
     <soap-api.version>1.4.0</soap-api.version>
-    <solr.version>8.0.0</solr.version>
+    <solr.version>8.2.0</solr.version>
     <sonar-maven-plugin.version>3.6.0.1398</sonar-maven-plugin.version>
     <spark.version>2.4.1</spark.version>
     <splunk.version>1.3.0</splunk.version>
@@ -480,13 +480,13 @@
     <spring-cloud-stream.version>2.0.2.RELEASE</spring-cloud-stream.version>
     <spring-cloud-task.version>2.1.2.RELEASE</spring-cloud-task.version>
     <spring-cloud.version>2.1.2.RELEASE</spring-cloud.version>
-    <spring-data-commons.version>2.1.9.RELEASE</spring-data-commons.version>
-    <spring-data-elasticsearch.version>3.1.9.RELEASE</spring-data-elasticsearch.version>
-    <spring-data-jpa.version>2.1.9.RELEASE</spring-data-jpa.version>
-    <spring-data-keyvalue.version>2.1.9.RELEASE</spring-data-keyvalue.version>
-    <spring-data-neo4j.version>5.1.9.RELEASE</spring-data-neo4j.version>
+    <spring-data-commons.version>2.1.10.RELEASE</spring-data-commons.version>
+    <spring-data-elasticsearch.version>3.1.10.RELEASE</spring-data-elasticsearch.version>
+    <spring-data-jpa.version>2.1.10.RELEASE</spring-data-jpa.version>
+    <spring-data-keyvalue.version>2.1.10.RELEASE</spring-data-keyvalue.version>
+    <spring-data-neo4j.version>5.1.10.RELEASE</spring-data-neo4j.version>
     <spring-data-r2dbc.version>1.0.0.M2</spring-data-r2dbc.version>
-    <spring-data-releasetrain.version>Lovelace-SR9</spring-data-releasetrain.version>
+    <spring-data-releasetrain.version>Lovelace-SR10</spring-data-releasetrain.version>
     <spring-framework.version>${spring.version}</spring-framework.version>
     <spring-hateoas.version>0.25.1.RELEASE</spring-hateoas.version>
     <spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
@@ -519,7 +519,7 @@
     <spring-web-flow.version>2.5.0.RELEASE</spring-web-flow.version>
     <spring-web-services.version>${spring-ws.version}</spring-web-services.version>
     <spring-ws.version>3.0.7.RELEASE</spring-ws.version>
-    <spring.version>5.1.8.RELEASE</spring.version>
+    <spring.version>5.1.9.RELEASE</spring.version>
     <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
     <springfox.version>2.9.2</springfox.version>
     <spullara-redis.version>0.7</spullara-redis.version>
@@ -1623,6 +1623,11 @@
       <dependency>
         <groupId>org.apache.cxf</groupId>
         <artifactId>cxf-rt-frontend-jaxws</artifactId>
+        <version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-transports-http</artifactId>
         <version>${cxf.version}</version>
       </dependency>
       <dependency>
