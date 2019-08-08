@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.17</version>
+  <version>5.1.18-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -106,7 +106,7 @@
     <commons-configuration.version>1.6</commons-configuration.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <commons-dbcp2.version>2.6.0</commons-dbcp2.version>
-    <commons-dbs.version>1.0.5</commons-dbs.version>
+    <commons-dbs.version>1.0.7</commons-dbs.version>
     <commons-digester.version>2.1</commons-digester.version>
     <commons-fileupload.version>1.4</commons-fileupload.version>
     <commons-httpclient.version>4.5.9</commons-httpclient.version>
@@ -400,6 +400,7 @@
     <oauth2-oidc-sdk.version>5.54</oauth2-oidc-sdk.version>
     <objenesis.version>3.0.1</objenesis.version>
     <ognl.version>2.6.11</ognl.version>
+    <ojdbc7.version>12.1.0.2.0</ojdbc7.version>
     <okhttp.version>3.12.2</okhttp.version>
     <openapi-generator-maven-plugin.version>4.0.2</openapi-generator-maven-plugin.version>
     <opencsv.version>2.3</opencsv.version>
@@ -950,6 +951,11 @@
         <groupId>com.nimbusds</groupId>
         <artifactId>oauth2-oidc-sdk</artifactId>
         <version>${oauth2-oidc-sdk.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.oracle</groupId>
+        <artifactId>ojdbc7</artifactId>
+        <version>${ojdbc7.version}</version>
       </dependency>
       <dependency>
         <groupId>com.querydsl</groupId>
@@ -2259,12 +2265,12 @@
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-validator-annotation-processor</artifactId>
+        <artifactId>hibernate-validator</artifactId>
         <version>${hibernate-validator.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate.validator</groupId>
-        <artifactId>hibernate-validator</artifactId>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator-annotation-processor</artifactId>
         <version>${hibernate-validator.version}</version>
       </dependency>
       <dependency>
