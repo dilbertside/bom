@@ -148,7 +148,7 @@
     <eclipselink.version>2.7.3</eclipselink.version>
     <ehcache.version>2.10.6</ehcache.version>
     <ehcache3.version>3.7.0</ehcache3.version>
-    <el-impl.version>2.2.1-b05</el-impl.version>
+    <el-impl.version>3.0.1-b06</el-impl.version>
     <elasticsearch.version>6.8.1</elasticsearch.version>
     <embedded-mongo.version>2.2.0</embedded-mongo.version>
     <embeddedtc.version>2.12</embeddedtc.version>
@@ -227,8 +227,8 @@
     <javax-cdi.version>1.2</javax-cdi.version>
     <javax-connector.version>1.5</javax-connector.version>
     <javax-ejb.version>3.2</javax-ejb.version>
-    <javax-el-api.version>3.0.0</javax-el-api.version>
-    <javax-el.version>3.0.1-b04</javax-el.version>
+    <javax-el-api.version>3.0.1-b06</javax-el-api.version>
+    <javax-el.version>2.2.1-b05</javax-el.version>
     <javax-enterprise-concurrent.version>1.0</javax-enterprise-concurrent.version>
     <javax-faces.version>2.2</javax-faces.version>
     <javax-inject.version>1</javax-inject.version>
@@ -1358,14 +1358,14 @@
         <version>${javax-ejb.version}</version>
       </dependency>
       <dependency>
-        <groupId>javax.el</groupId>
-        <artifactId>el-api</artifactId>
-        <version>2.2.1-b04</version>
+        <groupId>org.glassfish.web</groupId>
+        <artifactId>el-impl</artifactId>
+        <version>${javax-el.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.el</groupId>
         <artifactId>javax.el-api</artifactId>
-        <version>${javax-el.version}</version>
+        <version>${javax-el-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.enterprise</groupId>
@@ -2154,13 +2154,14 @@
       <dependency>
         <groupId>org.glassfish.web</groupId>
         <artifactId>el-impl</artifactId>
-        <version>${el-impl.version}</version>
+        <version>2.2.1-b05</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.glassfish.web</groupId>
-        <artifactId>javax.el</artifactId>
+        <groupId>javax.el</groupId>
+        <artifactId>javax.el-api</artifactId>
         <version>${javax-el.version}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.graphstream</groupId>
