@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.18</version>
+  <version>5.1.19-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -116,7 +116,7 @@
     <commons-logging.version>1.2</commons-logging.version>
     <commons-net.version>3.6</commons-net.version>
     <commons-pool.version>1.6</commons-pool.version>
-    <commons-pool2.version>2.6.2</commons-pool2.version>
+    <commons-pool2.version>2.7.0</commons-pool2.version>
     <couchbase-cache-client.version>2.1.0</couchbase-cache-client.version>
     <couchbase-client.version>2.7.7</couchbase-client.version>
     <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
@@ -128,7 +128,7 @@
     <cxf.version>3.3.2</cxf.version>
     <cxf.wsdl.filter>*.wsdl</cxf.wsdl.filter>
     <cxf.wsdl.rootdir>${project.basedir}/src/main/resources/wsdl</cxf.wsdl.rootdir>
-    <dependency-check-maven.version>5.1.1</dependency-check-maven.version>
+    <dependency-check-maven.version>5.2.1</dependency-check-maven.version>
     <dependency-management-plugin.version>1.0.8.RELEASE</dependency-management-plugin.version>
     <derby.version>10.14.2.0</derby.version>
     <docker-client.version>8.14.2</docker-client.version>
@@ -207,6 +207,7 @@
     <infinispan.version>9.4.15.Final</infinispan.version>
     <influxdb-java.version>2.15</influxdb-java.version>
     <itext.version>2.1.7</itext.version>
+    <jackson-databind.version>2.9.9.3</jackson-databind.version>
     <jackson-dataformat-csv.version>2.9.9</jackson-dataformat-csv.version>
     <jackson-datatype-hibernate4.version>2.9.9</jackson-datatype-hibernate4.version>
     <jackson-datatype-json-org.version>2.9.9</jackson-datatype-json-org.version>
@@ -400,7 +401,7 @@
     <oauth2-oidc-sdk.version>5.54</oauth2-oidc-sdk.version>
     <objenesis.version>3.0.1</objenesis.version>
     <ognl.version>2.6.11</ognl.version>
-    <ojdbc7.version>12.1.0.2.0</ojdbc7.version>
+    <ojdbc7.version>12.2.0.1.0</ojdbc7.version>
     <okhttp.version>3.12.2</okhttp.version>
     <openapi-generator-maven-plugin.version>4.0.2</openapi-generator-maven-plugin.version>
     <opencsv.version>2.3</opencsv.version>
@@ -697,7 +698,7 @@
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
-        <version>${jackson.version}</version>
+        <version>${jackson-databind.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
@@ -865,13 +866,6 @@
             <groupId>com.beust</groupId>
           </exclusion>
         </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>com.google.zxing</groupId>
-        <artifactId>zxing-parent</artifactId>
-        <version>${zxing.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.googlecode.protobuf-java-format</groupId>
@@ -1358,15 +1352,16 @@
         <version>${javax-ejb.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.glassfish.web</groupId>
-        <artifactId>el-impl</artifactId>
-        <version>${javax-el.version}</version>
-      </dependency>
-      <dependency>
         <groupId>javax.el</groupId>
         <artifactId>javax.el-api</artifactId>
         <version>${javax-el-api.version}</version>
+        <scope>provided</scope>
       </dependency>
+      <!--       <dependency>
+        <groupId>javax.el</groupId>
+        <artifactId>javax.el-api</artifactId>
+        <version>${javax-el.version}</version>
+      </dependency> -->
       <dependency>
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
@@ -1615,6 +1610,11 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>${commons-lang3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-pool2</artifactId>
+        <version>${commons-pool2.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.curator</groupId>
@@ -2154,12 +2154,6 @@
       <dependency>
         <groupId>org.glassfish.web</groupId>
         <artifactId>el-impl</artifactId>
-        <version>2.2.1-b05</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax.el</groupId>
-        <artifactId>javax.el-api</artifactId>
         <version>${javax-el.version}</version>
         <scope>provided</scope>
       </dependency>
@@ -3431,6 +3425,11 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.statemachine</groupId>
+        <artifactId>spring-statemachine-data-redis</artifactId>
+        <version>${spring-statemachine.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.statemachine</groupId>
         <artifactId>spring-statemachine-test</artifactId>
         <version>${spring-statemachine.version}</version>
       </dependency>
@@ -3644,7 +3643,6 @@
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
-      <version>${findbugs-jsr305.version}</version>
     </dependency>
   </dependencies>
   <repositories>
@@ -4246,16 +4244,22 @@
                   <exclude>org.springframework.boot:spring-boot*</exclude>
                   <exclude>org.springframework.security:spring-security*</exclude>
                   <exclude>net.sf.jasperreports:jasperreports:*</exclude>
+                  <exclude>org.hibernate.validator:hibernate-validator:*</exclude>
+                  <exclude>org.hibernate:hibernate-*:*</exclude>
+                  <exclude>com.fasterxml.jackson:jackson-*:*</exclude>
                 </excludes>
                 <includes>
-                  <exclude>org.springframework.boot:spring-boot*:${spring-boot.version}</exclude>
+                  <include>com.fasterxml.jackson:jackson-*:${jackson.version}</include>
+                  <include>org.hibernate.validator:hibernate-validator:${hibernate-validator.version}</include>
+                  <include>org.hibernate:hibernate-*:${hibernate.version}</include>
+                  <include>org.springframework.boot:spring-boot*:${spring-boot.version}</include>
                   <include>org.springframework:spring-*:${spring.version}</include>
                   <include>org.springframework.security:spring-security-*:${spring-security.version}</include>
                   <include>org.springframework.security:spring-security-rsa:1.0.3.RELEASE</include>
                   <include>org.springframework:spring-tuple:1.0.0.RELEASE</include>
                   <include>org.bouncycastle:bcprov-jdk15on:${bouncycastle.version}</include>
                   <include>org.jfree:jfreechart:${jfreechart.version}</include>
-                  <exclude>net.sf.jasperreports:jasperreports:${jasperreports.version}</exclude>
+                  <include>net.sf.jasperreports:jasperreports:${jasperreports.version}</include>
                 </includes>
               </bannedDependencies>
               <requireMavenVersion>
@@ -4790,6 +4794,28 @@
       </build>
     </profile>
     <profile>
+      <id>android</id>
+      <activation>
+        <property>
+          <name>env.ANDROID_HOME</name>
+        </property>
+        <file>
+          <exists>/${env.ANDROID_HOME}/platforms/android-${android.platform}/android.jar</exists>
+        </file>
+      </activation>
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>zxing-parent</artifactId>
+            <version>${zxing.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+    </profile>
+    <profile>
       <!-- to avoid dreaded Java version automatically change to java 1.5 after maven update -->
       <id>eclipse</id>
       <build>
@@ -5002,7 +5028,7 @@
     <profile>
       <id>doc</id>
       <build>
-        <defaultGoal>generate-resources test process-asciidoc help:active-profiles</defaultGoal>
+        <defaultGoal>generate-resources verify process-asciidoc help:active-profiles</defaultGoal>
         <plugins>
           <plugin>
             <groupId>com.spotify</groupId>
