@@ -3966,22 +3966,24 @@
             <excludes>
               <exclude>src/test/resources/**</exclude>
               <exclude>src/main/resources/**</exclude>
-              <excludes>
-                <exclude>**/*.xml</exclude>
-                <exclude>**/*.txt</exclude>
-                <exclude>**/*.md</exclude>
-                <exclude>**/*.json</exclude>
-                <exclude>**/*.py</exclude>
-                <exclude>**/*.yml</exclude>
-                <exclude>**/.gitignore</exclude>
-                <exclude>.mvn/**/*</exclude>
-                <exclude>mvnw.cmd</exclude>
-                <exclude>mvnw</exclude>
-                <exclude>LICENSE</exclude>
-                <exclude>.apt_generated/**</exclude>
-                <exclude>.factorypath</exclude>
-                <exclude>.editorconfig</exclude>
-              </excludes>
+              <exclude>src/main/webapp/WEB-INF/**</exclude>
+              <exclude>**/*.xml</exclude>
+              <exclude>**/*.txt</exclude>
+              <exclude>**/.keepme</exclude>
+              <exclude>**/*.md</exclude>
+              <exclude>**/*.json</exclude>
+              <exclude>**/*.py</exclude>
+              <exclude>**/*.yml</exclude>
+              <exclude>**/.gitignore</exclude>
+              <exclude>**/Dockerfile</exclude>
+              <exclude>**/*.woff2</exclude>
+              <exclude>.mvn/**/*</exclude>
+              <exclude>mvnw.cmd</exclude>
+              <exclude>mvnw</exclude>
+              <exclude>LICENSE</exclude>
+              <exclude>.apt_generated/**</exclude>
+              <exclude>.factorypath</exclude>
+              <exclude>.editorconfig</exclude>
             </excludes>
           </configuration>
         </plugin>
