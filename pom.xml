@@ -22,7 +22,7 @@
     <developer>
       <id>dbs</id>
       <name>DBS</name>
-      <email>dilbert.side@gmail.com</email>
+      <email>2637724+dilbertside@users.noreply.github.com</email>
       <url>https://github.com/dilbertside</url>
     </developer>
   </developers>
@@ -318,6 +318,7 @@
     <ldapbp.version>1.0</ldapbp.version>
     <ldapsdk.version>4.1</ldapsdk.version>
     <lettuce.version>5.1.8.RELEASE</lettuce.version>
+    <license-maven-plugin.file>../bom/resources/MIT-license.txt</license-maven-plugin.file>
     <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
     <linkuriousjs.version>1.4.0</linkuriousjs.version>
     <liquibase-hibernate4.version>3.5</liquibase-hibernate4.version>
@@ -361,6 +362,7 @@
     <maven-invoker-plugin.version>3.2.0</maven-invoker-plugin.version>
     <maven-jar-plugin.version>3.1.2</maven-jar-plugin.version>
     <maven-javadoc-plugin.version>3.1.0</maven-javadoc-plugin.version>
+    <maven-license-plugin.version>3.0</maven-license-plugin.version>
     <maven-pmd-plugin-ruleset-location>../bom/resources/pmd-rulesets.xml</maven-pmd-plugin-ruleset-location>
     <maven-pmd-plugin.version>3.12.0</maven-pmd-plugin.version>
     <maven-processor-plugin.version>3.1.0</maven-processor-plugin.version>
@@ -1371,11 +1373,7 @@
         <version>${javax-el-api.version}</version>
         <scope>provided</scope>
       </dependency>
-      <!--       <dependency>
-        <groupId>javax.el</groupId>
-        <artifactId>javax.el-api</artifactId>
-        <version>${javax-el.version}</version>
-      </dependency> -->
+      <!-- <dependency> <groupId>javax.el</groupId> <artifactId>javax.el-api</artifactId> <version>${javax-el.version}</version> </dependency> -->
       <dependency>
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
@@ -2626,12 +2624,8 @@
             <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
           </exclusion>
-          <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#commons-logging-setup
-            <exclusion>
-            <artifactId>spring-jcl</artifactId>
-            <groupId>org.springframework</groupId>
-            </exclusion>
-          -->
+          <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#commons-logging-setup <exclusion> <artifactId>spring-jcl</artifactId> 
+            <groupId>org.springframework</groupId> </exclusion> -->
         </exclusions>
       </dependency>
       <dependency>
@@ -3066,13 +3060,8 @@
         <artifactId>spring-cloud-cloudfoundry-connector</artifactId>
         <version>${spring-cloud-connectors.version}</version>
       </dependency>
-      <!-- <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${spring-cloud.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-        </dependency> -->
+      <!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-dependencies</artifactId> <version>${spring-cloud.version}</version> 
+        <type>pom</type> <scope>import</scope> </dependency> -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
@@ -3087,8 +3076,7 @@
         </exclusions>
       </dependency>
       <!-- If you intend to deploy the app on Heroku, add the following -->
-      <!-- It is okay to add more than one cloud connector; the right one will
-         be picked during runtime -->
+      <!-- It is okay to add more than one cloud connector; the right one will be picked during runtime -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-heroku-connector</artifactId>
@@ -3296,20 +3284,9 @@
         <artifactId>spring-restdocs-restassured</artifactId>
         <version>${spring-restdocs.version}</version>
       </dependency>
-      <!-- Spring Cloud
-        <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-cloudfoundry-connector</artifactId>
-        </dependency>
-        <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-spring-service-connector</artifactId>
-        </dependency>
-        <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-localconfig-connector</artifactId>
-        </dependency>
-      -->
+      <!-- Spring Cloud <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-cloudfoundry-connector</artifactId> </dependency> <dependency> 
+        <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-spring-service-connector</artifactId> </dependency> <dependency> <groupId>org.springframework.cloud</groupId> 
+        <artifactId>spring-cloud-localconfig-connector</artifactId> </dependency> -->
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-bom</artifactId>
@@ -3683,11 +3660,7 @@
       <name>Spring Repository</name>
       <url>http://repo.spring.io/release</url>
     </repository>
-    <!-- repository>
-      <id>neo4j</id>
-      <name>Neo4j</name>
-      <url>http://m2.neo4j.org/</url>
-      </repository -->
+    <!-- repository> <id>neo4j</id> <name>Neo4j</name> <url>http://m2.neo4j.org/</url> </repository -->
     <repository>
       <snapshots>
         <enabled>true</enabled>
@@ -3853,6 +3826,11 @@
             <effort>Max</effort>
             <threshold>Low</threshold>
             <xmlOutput>true</xmlOutput>
+            <!-- add property spotbugs.excludeBugsFile to exclude bugs -->
+            <!-- add property spotbugs.excludeFilterFile to exclude files to spot -->
+            <detail>true</detail>
+            <!-- spotbugs.failOnError=true -->
+            <failOnError>false</failOnError>
             <plugins>
               <plugin>
                 <groupId>com.h3xstream.findsecbugs</groupId>
@@ -3965,6 +3943,47 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <!--  mvn license:format -->
+          <groupId>com.mycila</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>${maven-license-plugin.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <header>${license-maven-plugin.file}</header>
+            <properties>
+              <owner>dilbertside</owner>
+              <year>${project.inceptionYear}</year>
+              <currentYear>2019</currentYear>
+            </properties>
+            <excludes>
+              <exclude>src/test/resources/**</exclude>
+              <exclude>src/main/resources/**</exclude>
+              <excludes>
+                <exclude>**/*.xml</exclude>
+                <exclude>**/*.txt</exclude>
+                <exclude>**/*.md</exclude>
+                <exclude>**/*.json</exclude>
+                <exclude>**/*.py</exclude>
+                <exclude>**/*.yml</exclude>
+                <exclude>**/.gitignore</exclude>
+                <exclude>.mvn/**/*</exclude>
+                <exclude>mvnw.cmd</exclude>
+                <exclude>mvnw</exclude>
+                <exclude>LICENSE</exclude>
+                <exclude>.apt_generated/**</exclude>
+                <exclude>.factorypath</exclude>
+                <exclude>.editorconfig</exclude>
+              </excludes>
+            </excludes>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>com.mysema.maven</groupId>
@@ -4792,7 +4811,7 @@
         </plugin>
         <plugin>
           <!-- to enable remote debugging -->
-          <!-- mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"  -->
+          <!-- mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005" -->
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
           <version>${spring-boot.version}</version>
@@ -4825,10 +4844,7 @@
             <mainClass>${start-class}</mainClass>
             <executable>true</executable>
             <fork>true</fork>
-            <!--
-              Enable the line below to have remote debugging of your application on port 5005
-              <jvmArguments>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments>
-            -->
+            <!-- Enable the line below to have remote debugging of your application on port 5005 <jvmArguments>-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005</jvmArguments> -->
             <profiles>
               <!-- http://docs.spring.io/spring-boot/docs/1.4.2.RELEASE/maven-plugin/examples/run-profiles.html -->
               <profile>${project.profile}</profile>
@@ -4859,7 +4875,7 @@
   <reporting>
     <plugins>
       <plugin>
-        <!--  usage https://spotbugs.github.io/spotbugs-maven-plugin/usage.html -->
+        <!-- usage https://spotbugs.github.io/spotbugs-maven-plugin/usage.html -->
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
         <version>${maven-spotbugs-plugin.version}</version>
@@ -5003,20 +5019,9 @@
                     <artifactId>spring-context-indexer</artifactId>
                     <version>${spring.version}</version>
                   </path>
-                  <!--
-                <path>
-                <groupId>org.mapstruct</groupId>
-                <artifactId>mapstruct-processor</artifactId>
-                <version>${mapstruct.version}</version>
-                </path>
-              -->
-                  <!-- For JPA static metamodel generation
-                <path>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-jpamodelgen</artifactId>
-                <version>${hibernate.version}</version>
-                </path>
-              -->
+                  <!-- <path> <groupId>org.mapstruct</groupId> <artifactId>mapstruct-processor</artifactId> <version>${mapstruct.version}</version> </path> -->
+                  <!-- For JPA static metamodel generation <path> <groupId>org.hibernate</groupId> <artifactId>hibernate-jpamodelgen</artifactId> <version>${hibernate.version}</version> 
+                    </path> -->
                 </annotationProcessorPaths>
               </configuration>
             </plugin>
@@ -5053,13 +5058,13 @@
                   <org.springframework.restdocs.outputDir>${snippetsDirectory}</org.springframework.restdocs.outputDir>
                 </systemPropertyVariables>
                 <argLine>-ea
-              --add-opens java.base/java.lang=spring.core
-              --add-opens java.base/java.util=ALL-UNNAMED
-              --add-opens
-              java.base/java.lang.reflect=ALL-UNNAMED
-              --add-opens java.base/java.text=ALL-UNNAMED
-              --add-opens java.desktop/java.awt.font=ALL-UNNAMED
-              --illegal-access=permit</argLine>
+                  --add-opens java.base/java.lang=spring.core
+                  --add-opens java.base/java.util=ALL-UNNAMED
+                  --add-opens
+                  java.base/java.lang.reflect=ALL-UNNAMED
+                  --add-opens java.base/java.text=ALL-UNNAMED
+                  --add-opens java.desktop/java.awt.font=ALL-UNNAMED
+                  --illegal-access=permit</argLine>
               </configuration>
             </plugin>
           </plugins>
@@ -5158,10 +5163,7 @@
           </plugin>
           <plugin>
             <!-- https://jeremylong.github.io/DependencyCheck/dependency-check-maven/index.html -->
-            <!-- to run
-             mvn org.owasp:dependency-check-maven:check 
-             or 
-             mvn verify -->
+            <!-- to run mvn org.owasp:dependency-check-maven:check or mvn verify -->
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-maven</artifactId>
             <version>${dependency-check-maven.version}</version>
