@@ -318,7 +318,7 @@
     <ldapbp.version>1.0</ldapbp.version>
     <ldapsdk.version>4.1</ldapsdk.version>
     <lettuce.version>5.1.8.RELEASE</lettuce.version>
-    <license-maven-plugin.file>../bom/resources/MIT-license.txt</license-maven-plugin.file>
+    <license-maven-plugin-file>../bom/resources/MIT-license.txt</license-maven-plugin-file>
     <lifecycle-mapping.version>1.0.0</lifecycle-mapping.version>
     <linkuriousjs.version>1.4.0</linkuriousjs.version>
     <liquibase-hibernate4.version>3.5</liquibase-hibernate4.version>
@@ -3957,7 +3957,7 @@
             </execution>
           </executions>
           <configuration>
-            <header>${license-maven-plugin.file}</header>
+            <header>${license-maven-plugin-file}</header>
             <properties>
               <owner>dilbertside</owner>
               <year>${project.inceptionYear}</year>
