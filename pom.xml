@@ -26,6 +26,9 @@
       <url>https://github.com/dilbertside</url>
     </developer>
   </developers>
+  <prerequisites>
+    <maven>3.6.1</maven>
+  </prerequisites>
   <scm>
     <connection>scm:git://git@github.com:dilbertside/bom.git</connection>
     <developerConnection>scm:git://git@github.com:dilbertside/bom.git</developerConnection>
@@ -125,13 +128,13 @@
     <cucumber.version>1.2.4</cucumber.version>
     <curator.version>2.12.0</curator.version>
     <cxf-plugin.version>3.3.0</cxf-plugin.version>
-    <cxf.version>3.3.2</cxf.version>
+    <cxf.version>3.3.3</cxf.version>
     <cxf.wsdl.filter>*.wsdl</cxf.wsdl.filter>
     <cxf.wsdl.rootdir>${project.basedir}/src/main/resources/wsdl</cxf.wsdl.rootdir>
     <dependency-check-maven.version>5.2.1</dependency-check-maven.version>
     <dependency-management-plugin.version>1.0.8.RELEASE</dependency-management-plugin.version>
     <derby.version>10.14.2.0</derby.version>
-    <docker-client.version>8.14.2</docker-client.version>
+    <docker-client.version>8.16.0</docker-client.version>
     <docker-maven-plugin.version>0.4.14</docker-maven-plugin.version>
     <docker-tag-extra>-dev</docker-tag-extra>
     <docker.image.prefix>bom</docker.image.prefix>
@@ -148,7 +151,6 @@
     <eclipselink.version>2.7.3</eclipselink.version>
     <ehcache.version>2.10.6</ehcache.version>
     <ehcache3.version>3.7.0</ehcache3.version>
-    <el-impl.version>3.0.1-b06</el-impl.version>
     <elasticsearch.version>6.8.1</elasticsearch.version>
     <embedded-mongo.version>2.2.0</embedded-mongo.version>
     <embeddedtc.version>2.12</embeddedtc.version>
@@ -229,6 +231,7 @@
     <javax-connector.version>1.5</javax-connector.version>
     <javax-ejb.version>3.2</javax-ejb.version>
     <javax-el-api.version>3.0.1-b06</javax-el-api.version>
+    <javax-el-impl.version>3.0.1-b11</javax-el-impl.version>
     <javax-el.version>2.2.1-b05</javax-el.version>
     <javax-enterprise-concurrent.version>1.0</javax-enterprise-concurrent.version>
     <javax-faces.version>2.2</javax-faces.version>
@@ -278,7 +281,7 @@
     <jibx.version>1.2.6</jibx.version>
     <jjwt.version>0.10.6</jjwt.version>
     <jline.version>2.14.6</jline.version>
-    <jmeter-maven-plugin.version>2.7.0</jmeter-maven-plugin.version>
+    <jmeter-maven-plugin.version>2.9.0</jmeter-maven-plugin.version>
     <jmustache.version>1.14</jmustache.version>
     <jna.version>4.5.2</jna.version>
     <jncryptor.version>1.2.0</jncryptor.version>
@@ -339,7 +342,7 @@
     <management.port>8888</management.port>
     <mapstruct.version>1.3.0.Final</mapstruct.version>
     <mariadb.version>2.4.0</mariadb.version>
-    <maven-android-plugin>4.5.0</maven-android-plugin>
+    <maven-android-plugin.version>4.6.0</maven-android-plugin.version>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
     <maven-archetype-plugin.version>3.0.1</maven-archetype-plugin.version>
     <maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
@@ -424,7 +427,7 @@
     <problem-spring-web.version>0.24.0</problem-spring-web.version>
     <problem.version>0.22.0</problem.version>
     <proguard.plugin.version>2.0.14</proguard.plugin.version>
-    <proguard.version>5.3.3</proguard.version>
+    <proguard.version>6.1.1</proguard.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <prometheus-pushgateway.version>0.5.0</prometheus-pushgateway.version>
@@ -444,7 +447,7 @@
     <resource.delimiter>@</resource.delimiter>
     <rest-assured.version>3.3.0</rest-assured.version>
     <restdocs-api-spec.version>0.5.0</restdocs-api-spec.version>
-    <restdocs-spec.version>0.9</restdocs-spec.version>
+    <restdocs-spec.version>0.15</restdocs-spec.version>
     <rometools.version>1.9.0</rometools.version>
     <run.addResources>false</run.addResources>
     <rxjava-adapter.version>1.2.1</rxjava-adapter.version>
@@ -473,7 +476,7 @@
     <spark.version>2.4.1</spark.version>
     <splunk.version>1.3.0</splunk.version>
     <spock.version>1.0-groovy-2.4</spock.version>
-    <spotbugs.version>3.1.12</spotbugs.version>
+    <spotbugs.version>3.1.12.2</spotbugs.version>
     <spring-amqp.version>2.1.8.RELEASE</spring-amqp.version>
     <spring-android.version>2.0.0.M4</spring-android.version>
     <spring-batch.version>4.1.2.RELEASE</spring-batch.version>
@@ -551,7 +554,7 @@
     <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
     <tiles-request.version>1.0.6</tiles-request.version>
     <tiles.version>3.0.7</tiles.version>
-    <tomcat.version>9.0.22</tomcat.version>
+    <tomcat.version>9.0.24</tomcat.version>
     <tomcat7Version>7.0.94</tomcat7Version>
     <twilio.version>7.12.0</twilio.version>
     <typica.version>1.3</typica.version>
@@ -1368,12 +1371,12 @@
         <version>${javax-ejb.version}</version>
       </dependency>
       <dependency>
+        <!-- Expression Language 3.0 API JSR 341 -->
         <groupId>javax.el</groupId>
         <artifactId>javax.el-api</artifactId>
         <version>${javax-el-api.version}</version>
         <scope>provided</scope>
       </dependency>
-      <!-- <dependency> <groupId>javax.el</groupId> <artifactId>javax.el-api</artifactId> <version>${javax-el.version}</version> </dependency> -->
       <dependency>
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
@@ -2138,6 +2141,13 @@
         <groupId>org.eclipse.persistence</groupId>
         <artifactId>org.eclipse.persistence.jpa</artifactId>
         <version>${eclipselink.version}</version>
+      </dependency>
+      <dependency>
+        <!-- implementation Expression Language 3.0 API JSR 341 -->
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.el</artifactId>
+        <version>${javax-el-impl.version}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.glassfish.corba</groupId>
@@ -3819,7 +3829,7 @@
             <dependency>
               <groupId>com.mebigfatguy.fb-contrib</groupId>
               <artifactId>fb-contrib</artifactId>
-              <version>7.4.3</version>
+              <version>7.4.6</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -3827,7 +3837,7 @@
             <threshold>Low</threshold>
             <xmlOutput>true</xmlOutput>
             <!-- add property spotbugs.excludeBugsFile to exclude bugs -->
-            <!-- add property spotbugs.excludeFilterFile to exclude files to spot -->
+            <!-- add property spotbugs.excludeFilterFile to exclude not relevant alerts -->
             <detail>true</detail>
             <!-- spotbugs.failOnError=true -->
             <failOnError>false</failOnError>
@@ -3966,11 +3976,14 @@
             <excludes>
               <exclude>src/test/resources/**</exclude>
               <exclude>src/main/resources/**</exclude>
+              <exclude>src/license/**</exclude>
+              <exclude>logs/**</exclude>
               <exclude>src/main/webapp/WEB-INF/**</exclude>
               <exclude>**/*.xml</exclude>
               <exclude>**/*.txt</exclude>
               <exclude>**/.keepme</exclude>
               <exclude>**/*.md</exclude>
+              <exclude>**/*.log</exclude>
               <exclude>**/*.json</exclude>
               <exclude>**/*.py</exclude>
               <exclude>**/*.yml</exclude>
@@ -4020,7 +4033,7 @@
         <plugin>
           <groupId>com.simpligility.maven.plugins</groupId>
           <artifactId>android-maven-plugin</artifactId>
-          <version>${maven-android-plugin}</version>
+          <version>${maven-android-plugin.version}</version>
           <extensions>true</extensions>
           <executions>
             <execution>
@@ -4354,8 +4367,8 @@
               </bannedDependencies>
               <requireMavenVersion>
                 <message>You are running an older version of Maven.
-                  ${project.artifactId} requires at least Maven 3.5.x</message>
-                <version>[3.5.0,)</version>
+                  ${project.artifactId} requires at least Maven 3.6.1</message>
+                <version>[3.6.1,)</version>
               </requireMavenVersion>
               <requireJavaVersion>
                 <message>You are running an older version of Java.
