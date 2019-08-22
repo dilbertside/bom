@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.19-SNAPSHOT</version>
+  <version>5.1.19</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -64,6 +64,7 @@
     <aopalliance.version>1.0</aopalliance.version>
     <apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
     <apacheds.version>1.5.5</apacheds.version>
+    <apiguardian-api.version>1.1.0</apiguardian-api.version>
     <appengine-sdk.version>1.9.75</appengine-sdk.version>
     <appengine.version>1.9.76</appengine.version>
     <apt-maven-plugin.version>1.1.3</apt-maven-plugin.version>
@@ -320,7 +321,7 @@
     <kafka.version>2.1.1</kafka.version>
     <kite.version>0.13.0</kite.version>
     <kotlin.version>1.2.71</kotlin.version>
-    <kryo.version>3.0.3</kryo.version>
+    <kryo.version>4.0.2</kryo.version>
     <ldapbp.version>1.0</ldapbp.version>
     <ldapsdk.version>4.1</ldapsdk.version>
     <lettuce.version>5.1.8.RELEASE</lettuce.version>
@@ -2087,6 +2088,11 @@
         <groupId>org.apache.zookeeper</groupId>
         <artifactId>zookeeper</artifactId>
         <version>${zookeeper.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apiguardian</groupId>
+        <artifactId>apiguardian-api</artifactId>
+        <version>${apiguardian-api.version}</version>
       </dependency>
       <dependency>
         <groupId>org.aspectj</groupId>
@@ -4452,7 +4458,13 @@
               </goals>
               <configuration>
                 <rules>
-                  <!-- Ensure no conflicting jar versions <requireUpperBoundDeps /> <requirePluginVersions /> <dependencyConvergence /> -->
+                  <banDuplicatePomDependencyVersions />
+                  <dependencyConvergence />
+                  <requireUpperBoundDeps>
+                    <excludes>
+                      <exclude>javax.xml.bind:jaxb-api</exclude>
+                    </excludes>
+                  </requireUpperBoundDeps>
                   <bannedDependencies>
                     <searchTransitive>true</searchTransitive>
                     <excludes>
@@ -4473,8 +4485,12 @@
                       <exclude>org.hibernate.validator:hibernate-validator:*</exclude>
                       <exclude>org.hibernate:hibernate-*:*</exclude>
                       <exclude>com.fasterxml.jackson:jackson-*:*</exclude>
+                      <exclude>org.junit.jupiter:junit-jupiter*:*</exclude>
+                      <exclude>org.junit.platform:junit-platform*:*</exclude>
                     </excludes>
                     <includes>
+                      <include>org.junit.jupiter:junit-jupiter*:${junit-jupiter.version}</include>
+                      <include>org.junit.platform:junit-platform*:${junit-platform.version}</include>
                       <include>com.fasterxml.jackson:jackson-*:${jackson.version}</include>
                       <include>org.hibernate.validator:hibernate-validator:${hibernate-validator.version}</include>
                       <include>org.hibernate:hibernate-*:${hibernate.version}</include>
@@ -4499,6 +4515,7 @@
                     <version>[${java.version}.0,)</version>
                   </requireJavaVersion>
                 </rules>
+                <fail>true</fail>
               </configuration>
             </execution>
           </executions>
@@ -5006,6 +5023,7 @@
           </executions>
           <configuration>
             <verbose>true</verbose>
+            <offline>true</offline>
             <dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>
             <generateGitPropertiesFile>true</generateGitPropertiesFile>
             <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
