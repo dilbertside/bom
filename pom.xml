@@ -507,8 +507,9 @@
     <spring-security-saml.version>1.0.4.RELEASE</spring-security-saml.version>
     <spring-security.version>5.2.0.M4</spring-security.version>
     <spring-session-bom.version>Bean-SR7</spring-session-bom.version>
-    <spring-session-data-mongodb.version>2.0.2.RELEASE</spring-session-data-mongodb.version>
-    <spring-session.version>2.1.1.RELEASE</spring-session.version>
+    <spring-session-data-mongodb.version>2.2.0.M3</spring-session-data-mongodb.version>
+    <spring-session-data-mongodb.version>2.2.0.M3</spring-session-data-mongodb.version>
+    <spring-session.version>2.2.0.M3</spring-session.version>
     <spring-shell.version>1.1.0.RELEASE</spring-shell.version>
     <spring-social-facebook.version>3.0.0.M3</spring-social-facebook.version>
     <spring-social-google.version>1.0.0.RELEASE</spring-social-google.version>
@@ -2819,6 +2820,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-cache</artifactId>
         <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.session</groupId>
+        <artifactId>spring-session-bom</artifactId>
+        <version>${spring-session-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
