@@ -57,7 +57,7 @@
     </snapshotRepository>
   </distributionManagement>
   <properties>
-    <activemq.version>5.15.9</activemq.version>
+    <activemq.version>5.15.10</activemq.version>
     <adal4j.version>1.6.4</adal4j.version>
     <android.platform>22</android.platform>
     <antlr2.version>2.7.7</antlr2.version>
@@ -125,7 +125,7 @@
     <commons-pool.version>1.6</commons-pool.version>
     <commons-pool2.version>2.7.0</commons-pool2.version>
     <couchbase-cache-client.version>2.1.0</couchbase-cache-client.version>
-    <couchbase-client.version>2.7.7</couchbase-client.version>
+    <couchbase-client.version>2.7.9</couchbase-client.version>
     <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
     <crashub.version>1.3.2</crashub.version>
     <cucumber-jvm.version>4.7.1</cucumber-jvm.version>
@@ -183,7 +183,7 @@
     <glassfish-jaxb.version>2.3.1</glassfish-jaxb.version>
     <gradle.version>2.9</gradle.version>
     <graphstream.version>1.3</graphstream.version>
-    <groovy.version>2.5.7</groovy.version>
+    <groovy.version>2.5.8</groovy.version>
     <gs-collections.version>7.0.3</gs-collections.version>
     <gson.version>2.8.5</gson.version>
     <guava.version>28.0-jre</guava.version>
@@ -208,11 +208,11 @@
     <htmlunit.version>2.34.1</htmlunit.version>
     <httpasyncclient.version>4.1.4</httpasyncclient.version>
     <httpclient.version>${commons-httpclient.version}</httpclient.version>
-    <httpcore.version>4.4.11</httpcore.version>
+    <httpcore.version>4.4.12</httpcore.version>
     <httpmime.version>4.5.7</httpmime.version>
     <hystrix-dashboard.version>1.5.5</hystrix-dashboard.version>
     <ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
-    <infinispan.version>9.4.15.Final</infinispan.version>
+    <infinispan.version>9.4.16.Final</infinispan.version>
     <influxdb-java.version>2.15</influxdb-java.version>
     <itext.version>2.1.7</itext.version>
     <jackson-databind.version>2.9.9.3</jackson-databind.version>
@@ -410,13 +410,14 @@
     <narayana.version>5.7.1.Final</narayana.version>
     <nekohtml.version>1.9.22</nekohtml.version>
     <neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
-    <neo4j-ogm.version>3.1.11</neo4j-ogm.version>
+    <neo4j-ogm.version>3.1.13</neo4j-ogm.version>
     <neo4j-spatial.version>0.13-neo4j-2.0.1</neo4j-spatial.version>
     <neo4j.version>2.3.2</neo4j.version>
     <netty-tcnative.version>2.0.25.Final</netty-tcnative.version>
-    <netty.version>4.1.38.Final</netty.version>
+    <netty.version>4.1.39.Final</netty.version>
     <nio-multipart-parser.version>1.1.0</nio-multipart-parser.version>
     <node.version>v10.16.0</node.version>
+    <nohttp-checkstyle.version>0.0.3.RELEASE</nohttp-checkstyle.version>
     <npm.version>6.9.0</npm.version>
     <oauth2-oidc-sdk.version>5.54</oauth2-oidc-sdk.version>
     <objenesis.version>3.0.1</objenesis.version>
@@ -453,8 +454,8 @@
     <querydsl.version>4.2.1</querydsl.version>
     <rabbit-amqp-client.version>5.7.3</rabbit-amqp-client.version>
     <rabbit-http-client.version>2.0.1.RELEASE</rabbit-http-client.version>
-    <reactive-streams.version>1.0.2</reactive-streams.version>
-    <reactor-bom.version>Californium-SR10</reactor-bom.version>
+    <reactive-streams.version>1.0.3</reactive-streams.version>
+    <reactor-bom.version>Californium-SR11</reactor-bom.version>
     <reactor-spring.version>3.1.5.RELEASE</reactor-spring.version>
     <reactor.version>3.2.9.RELEASE</reactor.version>
     <redmine-java-api.version>3.1.2</redmine-java-api.version>
@@ -467,7 +468,7 @@
     <run.addResources>false</run.addResources>
     <rxjava-adapter.version>1.2.1</rxjava-adapter.version>
     <rxjava.version>1.3.8</rxjava.version>
-    <rxjava2.version>2.2.11</rxjava2.version>
+    <rxjava2.version>2.2.12</rxjava2.version>
     <saaj-impl.version>1.5.1</saaj-impl.version>
     <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
     <scala.version>2.12</scala.version>
@@ -496,10 +497,10 @@
     <spring-android.version>2.0.0.M4</spring-android.version>
     <spring-batch.version>4.1.2.RELEASE</spring-batch.version>
     <spring-boot-admin.version>2.1.6</spring-boot-admin.version>
-    <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
+    <spring-boot.version>2.1.8.RELEASE</spring-boot.version>
     <spring-cloud-connectors.version>2.0.6.RELEASE</spring-cloud-connectors.version>
     <!-- https://github.com/spring-projects/spring-cloud/wiki/Spring-Cloud-Greenwich-Release-Notes -->
-    <spring-cloud-releasetrain.version>Greenwich.SR2</spring-cloud-releasetrain.version>
+    <spring-cloud-releasetrain.version>Greenwich.SR3</spring-cloud-releasetrain.version>
     <spring-cloud-starter-open-service-broker.version>3.0.3.RELEASE</spring-cloud-starter-open-service-broker.version>
     <spring-cloud-stream-releasetrain.version>Fishtown.SR3</spring-cloud-stream-releasetrain.version>
     <spring-cloud-stream.version>2.0.2.RELEASE</spring-cloud-stream.version>
@@ -578,7 +579,7 @@
     <typica.version>1.3</typica.version>
     <tyrus.version>1.3.5</tyrus.version>
     <unboundid-ldapsdk.version>4.0.11</unboundid-ldapsdk.version>
-    <undertow.version>2.0.25.Final</undertow.version>
+    <undertow.version>2.0.26.Final</undertow.version>
     <uuid.version>3.2</uuid.version>
     <velocity-tools-view.version>1.4</velocity-tools-view.version>
     <velocity-tools.version>2.0</velocity-tools.version>
@@ -4416,6 +4417,13 @@
               </goals>
             </execution>
           </executions>
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-classworlds</artifactId>
+              <version>2.6.0</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <header>${license-maven-plugin-file}</header>
             <properties>
