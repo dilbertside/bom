@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.22-SNAPSHOT</version>
+  <version>5.1.22</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -165,10 +165,12 @@
     <extdirectspring.version>1.8.1</extdirectspring.version>
     <extjs-touch.version>2.4.2</extjs-touch.version>
     <extjs.version>4.2.2</extjs.version>
+    <fb-contrib.version>7.4.3.sb</fb-contrib.version>
     <fest-assert.version>1.4</fest-assert.version>
     <findbugs-annotations.version>3.0.1</findbugs-annotations.version>
     <findbugs-jsr305.version>3.0.2</findbugs-jsr305.version>
     <findbugs.version>3.0.1</findbugs.version>
+    <findsecbugs-plugin.version>1.9.0</findsecbugs-plugin.version>
     <flatten-maven-plugin.version>1.1.0</flatten-maven-plugin.version>
     <flink.version>1.0.1</flink.version>
     <flyway.version>6.0.0</flyway.version>
@@ -4273,14 +4275,24 @@
           </executions>
           <dependencies>
             <dependency>
+              <groupId>com.google.code.gson</groupId>
+              <artifactId>gson</artifactId>
+              <version>2.8.5</version>
+            </dependency>
+            <dependency>
               <groupId>com.h3xstream.findsecbugs</groupId>
               <artifactId>findsecbugs-plugin</artifactId>
-              <version>1.9.0</version>
+              <version>${findsecbugs-plugin.version}</version>
             </dependency>
             <dependency>
               <groupId>com.mebigfatguy.fb-contrib</groupId>
               <artifactId>fb-contrib</artifactId>
-              <version>7.4.6</version>
+              <version>${fb-contrib.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>javax.json.bind</groupId>
+              <artifactId>javax.json.bind-api</artifactId>
+              <version>1.0</version>
             </dependency>
           </dependencies>
           <configuration>
@@ -4296,12 +4308,12 @@
               <plugin>
                 <groupId>com.h3xstream.findsecbugs</groupId>
                 <artifactId>findsecbugs-plugin</artifactId>
-                <version>1.9.0</version>
+                <version>${findsecbugs-plugin.version}</version>
               </plugin>
               <plugin>
                 <groupId>com.mebigfatguy.fb-contrib</groupId>
                 <artifactId>fb-contrib</artifactId>
-                <version>7.4.3</version>
+                <version>${fb-contrib.version}</version>
               </plugin>
             </plugins>
           </configuration>
