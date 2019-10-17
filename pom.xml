@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>4.1.17-SNAPSHOT</version>
+  <version>4.1.17</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials 4.1.x</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Brussels-SR16/reference/htmlsingle/)</description>
