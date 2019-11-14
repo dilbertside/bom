@@ -41,7 +41,7 @@ Migrating to Spring [Framework 5.1.x](https://github.com/spring-projects/spring-
 
 #### Minimum version
 
-* Maven 3.5.x https://maven.apache.org/
+* Maven 3.6.1 https://maven.apache.org/
 * Java 1.8
 
 ### POM
@@ -96,7 +96,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.1.23</version>
+    <version>5.1.24</version>
     <relativePath></relativePath>
   </parent>
 ```
