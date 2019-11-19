@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>4.1.17</version>
+  <version>4.1.18</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials 4.1.x</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Brussels-SR16/reference/htmlsingle/)</description>
@@ -259,7 +259,7 @@
     <mariadb.version>1.5.9</mariadb.version>
     <maven-android-plugin>4.5.0</maven-android-plugin>
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
-    <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
+    <maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
     <maven-checkstyle-config-location>../bom/checkstyle.xml</maven-checkstyle-config-location>
     <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
     <maven-checkstyle-suppressions-location>../bom/checkstyle-suppressions.xml</maven-checkstyle-suppressions-location>
@@ -3278,47 +3278,47 @@
               <goals>
                 <goal>enforce</goal>
               </goals>
-          <configuration>
-            <rules>
-              <!-- Ensure no conflicting jar versions <requireUpperBoundDeps /> <requirePluginVersions /> <dependencyConvergence /> -->
-              <bannedDependencies>
-                <searchTransitive>true</searchTransitive>
-                <excludes>
-                  <!-- groupId[:artifactId][:version][:type][:scope][:classifier] -->
-                  <exclude>javassist</exclude>
-                  <exclude>commons-logging</exclude>
-                  <exclude>cglib</exclude>
-                  <exclude>asm:*:*:jar:compile</exclude>
-                  <exclude>hsqldb</exclude>
-                  <exclude>log4j</exclude>
-                  <exclude>org.slf4j:1.5*</exclude>
-                  <exclude>org.slf4j:1.6*</exclude>
-                  <exclude>org.springframework:spring*:*</exclude>
-                  <exclude>org.springframework.boot:spring-boot*</exclude>
-                  <exclude>org.springframework.security:spring-security*</exclude>
-                </excludes>
-                <includes>
-                  <exclude>org.springframework.boot:spring-boot*:${spring-boot.version}</exclude>
-                  <include>org.springframework:spring-*:${spring.version}</include>
-                  <include>org.springframework.security:spring-security-*:${spring-security.version}</include>
-                  <include>org.springframework.security:spring-security-rsa:1.0.3.RELEASE</include>
-                  <include>org.springframework:spring-tuple:1.0.0.RELEASE</include>
-                  <include>org.bouncycastle:bcprov-jdk15on:${bouncycastle.version}</include>
-                </includes>
-              </bannedDependencies>
-              <requireMavenVersion>
-                <message>You are running an older version of Maven.
+              <configuration>
+                <rules>
+                  <!-- Ensure no conflicting jar versions <requireUpperBoundDeps /> <requirePluginVersions /> <dependencyConvergence /> -->
+                  <bannedDependencies>
+                    <searchTransitive>true</searchTransitive>
+                    <excludes>
+                      <!-- groupId[:artifactId][:version][:type][:scope][:classifier] -->
+                      <exclude>javassist</exclude>
+                      <exclude>commons-logging</exclude>
+                      <exclude>cglib</exclude>
+                      <exclude>asm:*:*:jar:compile</exclude>
+                      <exclude>hsqldb</exclude>
+                      <exclude>log4j</exclude>
+                      <exclude>org.slf4j:1.5*</exclude>
+                      <exclude>org.slf4j:1.6*</exclude>
+                      <exclude>org.springframework:spring*:*</exclude>
+                      <exclude>org.springframework.boot:spring-boot*</exclude>
+                      <exclude>org.springframework.security:spring-security*</exclude>
+                    </excludes>
+                    <includes>
+                      <exclude>org.springframework.boot:spring-boot*:${spring-boot.version}</exclude>
+                      <include>org.springframework:spring-*:${spring.version}</include>
+                      <include>org.springframework.security:spring-security-*:${spring-security.version}</include>
+                      <include>org.springframework.security:spring-security-rsa:1.0.3.RELEASE</include>
+                      <include>org.springframework:spring-tuple:1.0.0.RELEASE</include>
+                      <include>org.bouncycastle:bcprov-jdk15on:${bouncycastle.version}</include>
+                    </includes>
+                  </bannedDependencies>
+                  <requireMavenVersion>
+                    <message>You are running an older version of Maven.
                   ${project.artifactId} requires at least Maven 3.3.3</message>
-                <version>[3.3.3,)</version>
-              </requireMavenVersion>
-              <!--$NO-MVN-MAN-VER$ -->
-              <requireJavaVersion>
-                <message>You are running an older version of Java.
+                    <version>[3.3.3,)</version>
+                  </requireMavenVersion>
+                  <!--$NO-MVN-MAN-VER$ -->
+                  <requireJavaVersion>
+                    <message>You are running an older version of Java.
                   ${project.artifactId} requires at least JDK ${java.version}</message>
-                <version>[${java.version}.0,)</version>
-              </requireJavaVersion>
-            </rules>
-          </configuration>
+                    <version>[${java.version}.0,)</version>
+                  </requireJavaVersion>
+                </rules>
+              </configuration>
             </execution>
           </executions>
         </plugin>
