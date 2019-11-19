@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.24</version>
+  <version>5.1.25-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -104,7 +104,7 @@
     <caffeine.version>2.8.0</caffeine.version>
     <camel-spring-boot-starter.version>2.24.1</camel-spring-boot-starter.version>
     <cas-client.version>3.5.1</cas-client.version>
-    <cassandra-driver.version>3.6.0</cassandra-driver.version>
+    <cassandra-driver.version>3.11.5</cassandra-driver.version>
     <castor.version>1.4.1</castor.version>
     <cglib.version>3.2.10</cglib.version>
     <checker-qual.version>2.10.0</checker-qual.version>
@@ -414,8 +414,8 @@
     <mimepull.version>1.9.12</mimepull.version>
     <mockito.version>3.0.0</mockito.version>
     <mongo-driver-reactivestreams.version>1.11.0</mongo-driver-reactivestreams.version>
-    <mongo-java-driver.version>3.6.3</mongo-java-driver.version>
-    <mongodb.version>3.10.1</mongodb.version>
+    <mongo-java-driver.version>3.11.2</mongo-java-driver.version>
+    <mongodb.version>3.11.2</mongodb.version>
     <morphia-core.version>1.5.3</morphia-core.version>
     <mssql-jdbc.version>6.4.0.jre8</mssql-jdbc.version>
     <myfaces.version>2.3.2</myfaces.version>
@@ -427,7 +427,7 @@
     <neo4j-ogm.version>3.1.43</neo4j-ogm.version>
     <neo4j-spatial.version>0.13-neo4j-2.0.1</neo4j-spatial.version>
     <neo4j.version>2.3.2</neo4j.version>
-    <netty-tcnative.version>2.0.26.Final</netty-tcnative.version>
+    <netty-tcnative.version>2.0.27.Final</netty-tcnative.version>
     <netty.version>4.1.43.Final</netty.version>
     <nio-multipart-parser.version>1.1.0</nio-multipart-parser.version>
     <node.version>v10.16.0</node.version>
@@ -1472,6 +1472,11 @@
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
         <version>${netty.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.netty</groupId>
+        <artifactId>netty-tcnative</artifactId>
+        <version>${netty-tcnative.version}</version>
       </dependency>
       <dependency>
         <groupId>io.rest-assured</groupId>
@@ -5008,6 +5013,7 @@
                 <goal>enforce</goal>
               </goals>
               <configuration>
+                <skip />
                 <rules>
                   <banDuplicatePomDependencyVersions />
                   <requireMavenVersion>
@@ -5967,6 +5973,24 @@
         </dependency>
 
       </dependencies>
+    </profile>
+    <profile>
+      <id>travis</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <executions>
+              <execution>
+                <!-- travis mvn 3.6.1 is not available yet -->
+                <id>enforce-maven</id>
+                <phase>none</phase>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
     <profile>
       <id>doc</id>
