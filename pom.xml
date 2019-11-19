@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.25-SNAPSHOT</version>
+  <version>5.1.25</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -372,6 +372,8 @@
     <maven-checkstyle-suppressions-location>${project.build.directory}/quality-resources/checkstyle-suppressions.xml</maven-checkstyle-suppressions-location>
     <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+    <maven-dependency-plugin-include-artifact-ids>bom</maven-dependency-plugin-include-artifact-ids>
+    <maven-dependency-plugin-include-group-ids>com.github.dilbertside</maven-dependency-plugin-include-group-ids>
     <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>3.0.0-M1</maven-deploy-plugin.version>
     <maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
@@ -4955,8 +4957,8 @@
               </goals>
               <configuration>
                 <outputDirectory>${project.build.directory}/quality-resources</outputDirectory>
-                <includeArtifactIds>bom</includeArtifactIds>
-                <includeGroupIds>com.github.dilbertside</includeGroupIds>
+                <includeArtifactIds>${maven-dependency-plugin-include-artifact-ids}</includeArtifactIds>
+                <includeGroupIds>${maven-dependency-plugin-include-group-ids}</includeGroupIds>
                 <excludeTransitive>true</excludeTransitive>
                 <!--use as much as needed to be specific...also scope,type,classifier etc-->
               </configuration>
@@ -5658,7 +5660,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
-        <version>${maven-assembly-plugin.version}</version>
         <executions>
           <execution>
             <id>make shared resources</id>
