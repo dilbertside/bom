@@ -5991,6 +5991,9 @@
           </plugin>
         </plugins>
       </build>
+      <properties>
+        <skipTests>true</skipTests>
+      </properties>
     </profile>
     <profile>
       <id>doc</id>
