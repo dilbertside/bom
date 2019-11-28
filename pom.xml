@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.26-SNAPSHOT</version>
+  <version>5.1.26</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -80,7 +80,7 @@
     <atomikos.version>5.0.1</atomikos.version>
     <avro.version>1.9.0</avro.version>
     <awaitility.version>2.0.0</awaitility.version>
-    <aws-cdk-java.version>1.15.0.DEVPREVIEW</aws-cdk-java.version>
+    <aws-cdk-java.version>1.18.0</aws-cdk-java.version>
     <aws-java-sdk.version>1.11.649</aws-java-sdk.version>
     <aws-java-sdk2.version>2.10.8</aws-java-sdk2.version>
     <aws-lambda-core.version>1.2.0</aws-lambda-core.version>
@@ -1111,11 +1111,6 @@
         <groupId>com.querydsl</groupId>
         <artifactId>querydsl-mongodb</artifactId>
         <version>${querydsl.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.qulice</groupId>
-        <artifactId>qulice-maven-plugin</artifactId>
-        <version>${maven-qulice-plugin.version}</version>
       </dependency>
       <dependency>
         <groupId>com.rabbitmq</groupId>
@@ -4702,6 +4697,23 @@
               <classifier>apt</classifier>
             </dependency>
           </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>com.qulice</groupId>
+          <artifactId>qulice-maven-plugin</artifactId>
+          <version>${maven-qulice-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>code-check</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>check</goal>
+              </goals>
+              <configuration>
+                <license>file:${basedir}/LICENSE.txt</license>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <groupId>com.simpligility.maven.plugins</groupId>
