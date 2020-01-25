@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.1.27</version>
+  <version>5.1.27-1</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials (based on https://docs.spring.io/platform/docs/Cairo-SR7/reference/htmlsingle/)
@@ -113,7 +113,7 @@
     <commons-codec.version>1.13</commons-codec.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <commons-collections4.version>4.4</commons-collections4.version>
-    <commons-compress.version>1.18</commons-compress.version>
+    <commons-compress.version>1.19</commons-compress.version>
     <commons-configuration.version>1.10</commons-configuration.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <commons-dbcp2.version>2.7.0</commons-dbcp2.version>
@@ -328,7 +328,7 @@
     <liquibase-slf4j.version>2.0.0</liquibase-slf4j.version>
     <liquibase.version>3.6.3</liquibase.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.12.1</log4j2.version>
+    <log4j2.version>2.13.1</log4j2.version>
     <logback.version>1.2.3</logback.version>
     <logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
     <lombok.version>1.18.10</lombok.version>
@@ -455,7 +455,7 @@
     <openhft-lang.version>6.6.4</openhft-lang.version>
     <openid4java.version>0.9.6</openid4java.version>
     <openjpa.version>3.1.0</openjpa.version>
-    <paho-mqttv3-client.version>1.2.0</paho-mqttv3-client.version>
+    <paho-mqttv3-client.version>1.2.1</paho-mqttv3-client.version>
     <pig.version>0.12.1</pig.version>
     <poi.version>4.1.0</poi.version>
     <pooled-jms-version>1.0.6</pooled-jms-version>
