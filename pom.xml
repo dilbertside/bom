@@ -44,17 +44,10 @@
   </ciManagement>
   <distributionManagement>
     <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>jitpack.io-releases</id>
-      <name>jitpack Releases Repository</name>
-      <url>https://jitpack.io</url>
+      <id>github</id>
+      <name>GitHub dilbertside Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/dilbertside/bom</url>
     </repository>
-    <snapshotRepository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>jitpack.io-snapshots</id>
-      <name>jitpack Snapshots Repository</name>
-      <url>https://jitpack.io</url>
-    </snapshotRepository>
   </distributionManagement>
   <properties>
     <activemq.version>5.15.10</activemq.version>
@@ -328,7 +321,7 @@
     <liquibase-slf4j.version>2.0.0</liquibase-slf4j.version>
     <liquibase.version>3.6.3</liquibase.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.13.1</log4j2.version>
+    <log4j2.version>2.13.0</log4j2.version>
     <logback.version>1.2.3</logback.version>
     <logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
     <lombok.version>1.18.10</lombok.version>
@@ -5023,7 +5016,7 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>${maven-deploy-plugin.version}</version>
           <configuration>
-            <skip>true</skip>
+            <skip>false</skip>
           </configuration>
         </plugin>
         <plugin>

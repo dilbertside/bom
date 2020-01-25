@@ -53,8 +53,9 @@ To use it in your Maven build add:
 ```xml
 <repositories>
   <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
+    <id>github-dbs-bom</id>
+    <name>GitHub DBS Apache Maven Packages</name>
+    <url>https://maven.pkg.github.com/dilbertside/bom</url>
   </repository>
 </repositories>
 ```
@@ -80,9 +81,10 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
 			</activation>
 			<repositories>
 				<repository>
-					<id>jitpack.io</id>
-					<url>https://jitpack.io</url>
-				</repository>
+          <id>github-dbs-bom</id>
+          <name>GitHub DBS Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/dilbertside/bom</url>
+        </repository>
 			</repositories>
 		</profile>
 	</profiles>
