@@ -98,7 +98,7 @@
     <castor.version>1.4.1</castor.version>
     <cglib.version>3.2.10</cglib.version>
     <checker-qual.version>2.10.0</checker-qual.version>
-    <checkstyle.version>8.23</checkstyle.version>
+    <checkstyle.version>8.29</checkstyle.version>
     <classmate.version>1.5.1</classmate.version>
     <commonj.version>1.1.1</commonj.version>
     <commons-beanutils.version>1.9.4</commons-beanutils.version>
