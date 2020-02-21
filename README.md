@@ -66,6 +66,8 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
 
 [Maven Settings Reference](https://maven.apache.org/settings.html#Repositories)
 
+(More on GitHub package](https://help.github.com/articles/configuring-apache-maven-for-use-with-github-package-registry/)
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -84,7 +86,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
           <id>github-dbs-bom</id>
           <name>GitHub DBS Apache Maven Packages</name>
           <url>https://maven.pkg.github.com/dilbertside/bom</url>
-        </repository>
+          </repository>
 			</repositories>
 		</profile>
 	</profiles>
@@ -98,7 +100,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.1.27-1</version>
+    <version>5.1.28</version>
     <relativePath></relativePath>
   </parent>
 ```
