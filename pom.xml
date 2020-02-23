@@ -42,13 +42,6 @@
     <system>Travis CI</system>
     <url>https://travis-ci.org/dilbertside/bom</url>
   </ciManagement>
-  <distributionManagement>
-    <repository>
-      <id>github</id>
-      <name>GitHub dilbertside Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/dilbertside/bom</url>
-    </repository>
-  </distributionManagement>
   <properties>
     <activemq.version>5.15.10</activemq.version>
     <adal4j.version>1.6.4</adal4j.version>
@@ -1515,15 +1508,15 @@
         <artifactId>undertow-websockets-jsr</artifactId>
         <version>${undertow.version}</version>
       </dependency>
-      <!-- 
-    jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2:compile
-[INFO] |  |     +- org.glassfish.jaxb:txw2:jar:2.3.2:compile
-[INFO] |  |     +- com.sun.istack:istack-commons-runtime:jar:3.0.8:compile
-[INFO] |  |     +- org.jvnet.staxex:stax-ex:jar:1.8.1:compile
-[INFO] |  |     +- com.sun.xml.fastinfoset:FastInfoset:jar:1.2.16:compile
-[INFO] |  |     \- jakarta.activation:jakarta.activation-api:jar:1.2.1:compile
-    
-     -->
+      <!--
+        jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2:compile
+        [INFO] | | +- org.glassfish.jaxb:txw2:jar:2.3.2:compile
+        [INFO] | | +- com.sun.istack:istack-commons-runtime:jar:3.0.8:compile
+        [INFO] | | +- org.jvnet.staxex:stax-ex:jar:1.8.1:compile
+        [INFO] | | +- com.sun.xml.fastinfoset:FastInfoset:jar:1.2.16:compile
+        [INFO] | | \- jakarta.activation:jakarta.activation-api:jar:1.2.1:compile
+
+      -->
       <dependency>
         <groupId>jakarta.activation</groupId>
         <artifactId>jakarta.activation-api</artifactId>
@@ -3207,7 +3200,7 @@
             <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
           </exclusion>
-          <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#commons-logging-setup <exclusion> <artifactId>spring-jcl</artifactId> 
+          <!-- https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x#commons-logging-setup <exclusion> <artifactId>spring-jcl</artifactId>
             <groupId>org.springframework</groupId> </exclusion> -->
         </exclusions>
       </dependency>
@@ -3638,8 +3631,13 @@
         <artifactId>spring-cloud-cloudfoundry-connector</artifactId>
         <version>${spring-cloud-connectors.version}</version>
       </dependency>
-      <!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-dependencies</artifactId> <version>${spring-cloud.version}</version> 
-        <type>pom</type> <scope>import</scope> </dependency> -->
+      <!-- <dependency> 
+      		<groupId>org.springframework.cloud</groupId> 
+      		<artifactId>spring-cloud-dependencies</artifactId> 
+      		<version>${spring-cloud.version}</version>
+        	<type>pom</type> 
+        	<scope>import</scope> 
+	  </dependency> -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
@@ -3890,9 +3888,14 @@
         <version>${spring-restdocs.version}</version>
         <scope>test</scope>
       </dependency>
-      <!-- Spring Cloud <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-cloudfoundry-connector</artifactId> </dependency> <dependency> 
-        <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-spring-service-connector</artifactId> </dependency> <dependency> <groupId>org.springframework.cloud</groupId> 
-        <artifactId>spring-cloud-localconfig-connector</artifactId> </dependency> -->
+      <!-- Spring Cloud <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-cloudfoundry-connector</artifactId> </dependency> <dependency>
+        <groupId>org.springframework.cloud</groupId> 
+        <artifactId>spring-cloud-spring-service-connector</artifactId> 
+        </dependency> 
+        <dependency> 
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-localconfig-connector</artifactId> 
+        </dependency> -->
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-bom</artifactId>
@@ -4631,7 +4634,7 @@
           </executions>
         </plugin>
         <plugin>
-          <!--  mvn license:format -->
+          <!-- mvn license:format -->
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
           <version>${maven-license-plugin.version}</version>
@@ -5000,7 +5003,7 @@
                 <includeArtifactIds>${maven-dependency-plugin-include-artifact-ids}</includeArtifactIds>
                 <includeGroupIds>${maven-dependency-plugin-include-group-ids}</includeGroupIds>
                 <excludeTransitive>true</excludeTransitive>
-                <!--use as much as needed to be specific...also scope,type,classifier etc-->
+                <!--use as much as needed to be specific...also scope,type,classifier etc -->
               </configuration>
             </execution>
             <execution>
@@ -5043,7 +5046,7 @@
                 <rules>
                   <requireJavaVersion>
                     <message>You are running an older version of Java.
-                  ${project.artifactId} requires at least JDK ${java.version}</message>
+                      ${project.artifactId} requires at least JDK ${java.version}</message>
                     <version>[${java.version}.0,)</version>
                   </requireJavaVersion>
                 </rules>
@@ -5060,7 +5063,7 @@
                   <banDuplicatePomDependencyVersions />
                   <requireMavenVersion>
                     <message>You are running an older version of Maven.
-                  ${project.artifactId} requires at least Maven 3.6.1</message>
+                      ${project.artifactId} requires at least Maven 3.6.1</message>
                     <version>[3.6.1,)</version>
                   </requireMavenVersion>
                 </rules>
@@ -5742,6 +5745,36 @@
   </reporting>
   <profiles>
     <profile>
+      <id>github-pkg</id>
+      <!-- used to deploy to multiple repo or package management system -->
+      <!-- mvn11 deploy -Pgithub-pkg -->
+      <distributionManagement>
+        <repository>
+          <id>github</id>
+          <name>GitHub dilbertside Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/dilbertside/bom</url>
+        </repository>
+      </distributionManagement>
+    </profile>
+    <profile>
+      <id>jipack-pkg</id>
+      <!-- used to deploy to multiple repo or package management system -->
+      <distributionManagement>
+        <repository>
+          <uniqueVersion>false</uniqueVersion>
+          <id>jitpack.io-releases</id>
+          <name>jitpack Releases Repository</name>
+          <url>https://jitpack.io</url>
+        </repository>
+        <snapshotRepository>
+          <uniqueVersion>false</uniqueVersion>
+          <id>jitpack.io-snapshots</id>
+          <name>jitpack Snapshots Repository</name>
+          <url>https://jitpack.io</url>
+        </snapshotRepository>
+      </distributionManagement>
+    </profile>
+    <profile>
       <id>export</id>
       <build>
         <plugins>
@@ -5908,7 +5941,7 @@
                     <version>${spring.version}</version>
                   </path>
                   <!-- <path> <groupId>org.mapstruct</groupId> <artifactId>mapstruct-processor</artifactId> <version>${mapstruct.version}</version> </path> -->
-                  <!-- For JPA static metamodel generation <path> <groupId>org.hibernate</groupId> <artifactId>hibernate-jpamodelgen</artifactId> <version>${hibernate.version}</version> 
+                  <!-- For JPA static metamodel generation <path> <groupId>org.hibernate</groupId> <artifactId>hibernate-jpamodelgen</artifactId> <version>${hibernate.version}</version>
                     </path> -->
                 </annotationProcessorPaths>
               </configuration>

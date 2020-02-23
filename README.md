@@ -83,10 +83,14 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
 			</activation>
 			<repositories>
 				<repository>
-          <id>github-dbs-bom</id>
-          <name>GitHub DBS Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/dilbertside/bom</url>
-          </repository>
+					<id>jitpack.io</id>
+					<url>https://jitpack.io</url>
+				</repository>
+				<repository>
+          			<id>github-dbs-bom</id>
+          			<name>GitHub DBS Apache Maven Packages</name>
+          			<url>https://maven.pkg.github.com/dilbertside/bom</url>
+          		</repository>
 			</repositories>
 		</profile>
 	</profiles>
