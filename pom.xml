@@ -373,6 +373,7 @@
     <maven-jsonschema2pojo-plugin.version>1.0.1</maven-jsonschema2pojo-plugin.version>
     <maven-license-plugin-file.version>${project.build.directory}/quality-resources/MIT-license.txt</maven-license-plugin-file.version>
     <maven-license-plugin.version>3.0</maven-license-plugin.version>
+    <maven-oga-plugin.version>1.0.0</maven-oga-plugin.version>
     <maven-openapi-generator-plugin.version>4.0.2</maven-openapi-generator-plugin.version>
     <maven-phantomjs-plugin.version>0.7</maven-phantomjs-plugin.version>
     <maven-pmd-plugin-ruleset-location>${project.build.directory}/quality-resources/pmd-rulesets.xml</maven-pmd-plugin-ruleset-location>
@@ -4428,6 +4429,11 @@
       <!-- Apply most sensible defaults for user projects -->
       <plugins>
         <plugin>
+          <groupId>biz.lermitage.oga</groupId>
+          <artifactId>oga-maven-plugin</artifactId>
+          <version>${maven-oga-plugin.version}</version>
+        </plugin>
+        <plugin>
           <!-- https://github.com/BerkleyTechnologyServices/restdocs-spec -->
           <groupId>com.github.berkleytechnologyservices.restdocs-spec</groupId>
           <artifactId>restdocs-spec-maven-plugin</artifactId>
@@ -4969,6 +4975,11 @@
             <target>${java.version}</target>
             <annotationProcessorPaths>
               <path>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${spring-boot.version}</version>
+              </path>
+              <path>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
@@ -4983,6 +4994,11 @@
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-jpamodelgen</artifactId>
                 <version>${hibernate.version}</version>
+              </path>
+              <path>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-runtime</artifactId>
+                <version>${jaxb-runtime.version}</version>
               </path>
             </annotationProcessorPaths>
           </configuration>
