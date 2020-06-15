@@ -543,7 +543,7 @@
     <spring-security-jwt.version>1.0.10.RELEASE</spring-security-jwt.version>
     <spring-security-oauth.version>2.3.8.RELEASE</spring-security-oauth.version>
     <spring-security-saml.version>1.0.4.RELEASE</spring-security-saml.version>
-    <spring-security.version>5.1.7.RELEASE</spring-security.version>
+    <spring-security.version>5.3.3.RELEASE</spring-security.version>
     <spring-session-bom.version>Bean-SR8</spring-session-bom.version>
     <spring-session-data-mongodb.version>${spring-session.version}</spring-session-data-mongodb.version>
     <spring-session.version>2.1.8.RELEASE</spring-session.version>
