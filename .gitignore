@@ -28,3 +28,4 @@ hs_err_pid*
 .project
 .flattened-pom.xml
 *.backup
+/target/
