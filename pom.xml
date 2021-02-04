@@ -259,7 +259,7 @@
     <jedis.version>3.1.0</jedis.version>
     <jeromq.version>0.5.1</jeromq.version>
     <jersey.version>2.28</jersey.version>
-    <jest.version>6.8.10</jest.version>
+    <jest.version>6.3.1</jest.version>
     <jetbrains-annotations.version>17.0.0</jetbrains-annotations.version>
     <jettison.version>1.4.0</jettison.version>
     <jetty-el.version>8.5.40</jetty-el.version>
@@ -414,7 +414,7 @@
     <mimepull.version>1.9.12</mimepull.version>
     <mockito.version>3.0.0</mockito.version>
     <mongo-driver-reactivestreams.version>1.11.0</mongo-driver-reactivestreams.version>
-    <mongo-java-driver.version>3.11.2</mongo-java-driver.version>
+    <mongo-java-driver.version>3.12.7</mongo-java-driver.version>
     <mongodb.version>3.11.2</mongodb.version>
     <morphia-core.version>1.5.3</morphia-core.version>
     <mssql-jdbc.version>6.4.0.jre8</mssql-jdbc.version>
