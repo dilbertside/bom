@@ -367,9 +367,9 @@
     <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
     <maven-invoker-plugin.version>3.2.0</maven-invoker-plugin.version>
     <maven-jacoco-plugin.version>0.8.4</maven-jacoco-plugin.version>
-    <maven-jar-plugin.version>3.1.2</maven-jar-plugin.version>
+    <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
     <maven-jasmine-plugin.version>2.0</maven-jasmine-plugin.version>
-    <maven-javadoc-plugin.version>3.1.0</maven-javadoc-plugin.version>
+    <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
     <maven-jib-plugin.version>1.5.0</maven-jib-plugin.version>
     <maven-jmeter-plugin.version>2.9.0</maven-jmeter-plugin.version>
     <maven-jsonschema2pojo-plugin.version>1.0.1</maven-jsonschema2pojo-plugin.version>
@@ -5252,7 +5252,7 @@
                 <Automatic-Module-Name>${project.groupId}</Automatic-Module-Name>
                 <X-Compile-Source-JDK>${maven.compile.source}</X-Compile-Source-JDK>
                 <X-Compile-Target-JDK>${maven.compile.target}</X-Compile-Target-JDK>
-                <Built-By>thymeleaf</Built-By>
+                <Built-By>${project.artifactId}</Built-By>
               </manifestEntries>
             </archive>
           </configuration>
@@ -5261,6 +5261,25 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${maven-javadoc-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>attach-javadocs</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <source>${java.version}</source>
+            <tags>
+              <tag>
+                <name>apiNote</name>
+                <!-- apiNote tag for all places -->
+                <placement>a</placement>
+                <head>API note:</head>
+              </tag>
+            </tags>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
