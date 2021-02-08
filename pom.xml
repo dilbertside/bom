@@ -91,7 +91,7 @@
     <castor.version>1.4.1</castor.version>
     <cglib.version>3.2.10</cglib.version>
     <checker-qual.version>2.10.0</checker-qual.version>
-    <checkstyle.version>8.23</checkstyle.version>
+    <checkstyle.version>8.29</checkstyle.version>
     <classmate.version>1.5.1</classmate.version>
     <commonj.version>1.1.1</commonj.version>
     <commons-beanutils.version>1.9.4</commons-beanutils.version>
@@ -167,7 +167,7 @@
     <glassfish-jaxb.version>2.3.1</glassfish-jaxb.version>
     <gradle.version>2.9</gradle.version>
     <graphstream.version>1.3</graphstream.version>
-    <groovy.version>2.5.9</groovy.version>
+    <groovy.version>2.5.14</groovy.version>
     <gs-collections.version>7.0.3</gs-collections.version>
     <gson.version>2.8.6</gson.version>
     <guava.version>28.0-jre</guava.version>
@@ -188,7 +188,7 @@
     <hornetq.version>2.4.7.Final</hornetq.version>
     <hsqldb.version>2.5.0</hsqldb.version>
     <html5shiv.version>3.7.3-1</html5shiv.version>
-    <htmlunit.version>2.34.1</htmlunit.version>
+    <htmlunit.version>2.37.0</htmlunit.version>
     <httpasyncclient.version>4.1.4</httpasyncclient.version>
     <httpclient.version>${commons-httpclient.version}</httpclient.version>
     <httpcore.version>4.4.13</httpcore.version>
@@ -265,7 +265,7 @@
     <jetty-el.version>8.5.40</jetty-el.version>
     <jetty-jsp.version>2.2.0.v201112011158</jetty-jsp.version>
     <jetty-reactive-httpclient.version>1.0.3</jetty-reactive-httpclient.version>
-    <jetty.version>9.4.25.v20191220</jetty.version>
+    <jetty.version>9.4.35.v20201120</jetty.version>
     <jfreechart.version>1.5.0</jfreechart.version>
     <jibx.version>1.3.1</jibx.version>
     <jjwt.version>0.10.6</jjwt.version>
@@ -299,7 +299,7 @@
     <junit-jupiter.version>5.5.1</junit-jupiter.version>
     <junit-platform.version>1.5.1</junit-platform.version>
     <junit-vintage.version>5.5.1</junit-vintage.version>
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <jxl.version>2.6.12</jxl.version>
     <jzlib.version>1.1.3</jzlib.version>
     <kafka.version>2.1.1</kafka.version>
@@ -316,7 +316,7 @@
     <liquibase-slf4j.version>2.0.0</liquibase-slf4j.version>
     <liquibase.version>3.6.3</liquibase.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.13.0</log4j2.version>
+    <log4j2.version>2.13.2</log4j2.version>
     <logback.version>1.2.3</logback.version>
     <logstash-logback-encoder.version>6.1</logstash-logback-encoder.version>
     <lombok.version>1.18.10</lombok.version>
@@ -419,7 +419,7 @@
     <morphia-core.version>1.5.3</morphia-core.version>
     <mssql-jdbc.version>6.4.0.jre8</mssql-jdbc.version>
     <myfaces.version>2.3.2</myfaces.version>
-    <mysql-connector-java.version>5.1.48</mysql-connector-java.version>
+    <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
     <mysql.version>8.0.19</mysql.version>
     <narayana.version>5.7.1.Final</narayana.version>
     <nekohtml.version>1.9.22</nekohtml.version>
@@ -497,7 +497,7 @@
     <snappy.version>1.1.2.6</snappy.version>
     <snippetsDirectory>${project.build.directory}/generated-snippets</snippetsDirectory>
     <soap-api.version>1.4.0</soap-api.version>
-    <solr.version>8.3.0</solr.version>
+    <solr.version>8.4.0</solr.version>
     <spark.version>2.4.1</spark.version>
     <splunk.version>1.6.5.0</splunk.version>
     <spock.version>1.0-groovy-2.4</spock.version>
@@ -584,7 +584,7 @@
     <tiles-request.version>1.0.6</tiles-request.version>
     <tiles.version>3.0.7</tiles.version>
     <tomcat.version>9.0.39</tomcat.version>
-    <tomcat7Version>7.0.94</tomcat7Version>
+    <tomcat7Version>7.0.104</tomcat7Version>
     <twilio.version>7.41.1</twilio.version>
     <txw2.version>2.3.2</txw2.version>
     <typica.version>1.3</typica.version>
@@ -618,7 +618,7 @@
     <xmlunit.version>1.6</xmlunit.version>
     <xmlunit2.version>2.6.4</xmlunit2.version>
     <xom.version>1.3.2</xom.version>
-    <xstream.version>1.4.11.1</xstream.version>
+    <xstream.version>1.4.15</xstream.version>
     <xws-security.version>3.0</xws-security.version>
     <yammer-metrics.version>2.2.0</yammer-metrics.version>
     <yarn.version>1.12.3</yarn.version>
