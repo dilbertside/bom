@@ -61,10 +61,11 @@
     <appengine-sdk.version>1.9.84</appengine-sdk.version>
     <appengine.version>1.9.76</appengine.version>
     <archunit-junit5-api.version>0.11.0</archunit-junit5-api.version>
+    <ardoq.version>1.26</ardoq.version>
     <artemis.version>2.10.1</artemis.version>
-    <asciidoctorj-pdf.version>1.5.0-beta.16</asciidoctorj-pdf.version>
-    <asciidoctorj.diagram.version>1.5.18</asciidoctorj.diagram.version>
-    <asciidoctorj.version>1.5.8.1</asciidoctorj.version>
+    <asciidoctorj-pdf.version>1.5.4</asciidoctorj-pdf.version>
+    <asciidoctorj.diagram.version>2.1.0</asciidoctorj.diagram.version>
+    <asciidoctorj.version>2.4.2</asciidoctorj.version>
     <asm-ow2.version>7.2-beta</asm-ow2.version>
     <aspectj.version>1.9.6</aspectj.version>
     <assertj-core.version>3.13.2</assertj-core.version>
@@ -97,8 +98,8 @@
     <cassandra-driver.version>3.11.5</cassandra-driver.version>
     <castor.version>1.4.1</castor.version>
     <cglib.version>3.3.0</cglib.version>
-    <checker-qual.version>2.10.0</checker-qual.version>
-    <checkstyle.version>8.23</checkstyle.version>
+    <checker-qual.version>3.5.0</checker-qual.version>
+    <checkstyle.version>8.29</checkstyle.version>
     <classmate.version>1.5.1</classmate.version>
     <commonj.version>1.1.1</commonj.version>
     <commons-beanutils.version>1.9.4</commons-beanutils.version>
@@ -106,7 +107,7 @@
     <commons-codec.version>1.13</commons-codec.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <commons-collections4.version>4.4</commons-collections4.version>
-    <commons-compress.version>1.19</commons-compress.version>
+    <commons-compress.version>1.20</commons-compress.version>
     <commons-configuration.version>1.10</commons-configuration.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <commons-dbcp2.version>2.7.0</commons-dbcp2.version>
@@ -143,7 +144,7 @@
     <docker.java.extra.args />
     <!-- separate java options with 1 space -->
     <docker.java.extra.opts><![CDATA[-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:+UnlockDiagnosticVMOptions -XX:+AggressiveOpts -XX:MaxRAMFraction=1]]></docker.java.extra.opts>
-    <dom4j.version>1.6.1</dom4j.version>
+    <dom4j.version>2.1.3</dom4j.version>
     <dropwizard-metrics.version>4.1.17</dropwizard-metrics.version>
     <eclipselink-javax-persistence.version>2.2.1</eclipselink-javax-persistence.version>
     <eclipselink.version>2.7.4</eclipselink.version>
@@ -154,7 +155,7 @@
     <elasticsearch.version>7.9.3</elasticsearch.version>
     <embedded-mongo.version>2.2.0</embedded-mongo.version>
     <embeddedtc.version>2.16</embeddedtc.version>
-    <error_prone_annotations.version>2.3.3</error_prone_annotations.version>
+    <error_prone_annotations.version>2.3.4</error_prone_annotations.version>
     <evo-inflector.version>1.2.2</evo-inflector.version>
     <extclassgenerator.version>2.0.0</extclassgenerator.version>
     <extdirectspring.version>1.8.1</extdirectspring.version>
@@ -180,7 +181,7 @@
     <groovy.version>2.5.14</groovy.version>
     <gs-collections.version>7.0.3</gs-collections.version>
     <gson.version>2.8.6</gson.version>
-    <guava.version>28.0-jre</guava.version>
+    <guava.version>30.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
     <h2.version>1.4.200</h2.version>
     <hadoop.version>2.2.0</hadoop.version>
@@ -287,7 +288,7 @@
     <jeromq.version>0.5.1</jeromq.version>
     <jersey.version>2.29.1</jersey.version>
     <jest.version>6.8.10</jest.version>
-    <jetbrains-annotations.version>17.0.0</jetbrains-annotations.version>
+    <jetbrains-annotations.version>19.0.0</jetbrains-annotations.version>
     <jettison.version>1.4.0</jettison.version>
     <jetty-el.version>8.5.54</jetty-el.version>
     <jetty-jsp.version>2.2.0.v201112011158</jetty-jsp.version>
@@ -299,7 +300,7 @@
     <jline.version>2.14.6</jline.version>
     <jmapper.version>1.6.0.1</jmapper.version>
     <jmustache.version>1.15</jmustache.version>
-    <jna.version>5.4.0</jna.version>
+    <jna.version>5.5.0</jna.version>
     <jncryptor.version>1.2.0</jncryptor.version>
     <joda-money.version>1.0.1</joda-money.version>
     <joda-time.version>2.10.9</joda-time.version>
@@ -311,7 +312,7 @@
     <jooq.version>3.12.4</jooq.version>
     <jopt-simple.version>5.0.2</jopt-simple.version>
     <jquery-mobile.version>1.4.5</jquery-mobile.version>
-    <jquery.version>3.4.1</jquery.version>
+    <jquery.version>3.5.1</jquery.version>
     <jredis.version>06052013</jredis.version>
     <jruby.version>9.2.8.0</jruby.version>
     <jsch.version>0.1.55</jsch.version>
@@ -324,10 +325,10 @@
     <jsr305.version>3.0.2</jsr305.version>
     <jstl.version>1.2</jstl.version>
     <jtds.version>1.3.1</jtds.version>
-    <junit-jupiter.version>5.5.2</junit-jupiter.version>
-    <junit-platform.version>1.5.2</junit-platform.version>
+    <junit-jupiter.version>5.6.2</junit-jupiter.version>
+    <junit-platform.version>1.6.2</junit-platform.version>
     <junit-vintage.version>5.5.2</junit-vintage.version>
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <jxl.version>2.6.12</jxl.version>
     <jzlib.version>1.1.3</jzlib.version>
     <kafka.version>2.3.1</kafka.version>
@@ -345,7 +346,7 @@
     <liquibase-slf4j.version>2.0.0</liquibase-slf4j.version>
     <liquibase.version>4.1.1</liquibase.version>
     <log4j.version>1.2.17</log4j.version>
-    <log4j2.version>2.13.0</log4j2.version>
+    <log4j2.version>2.14.0</log4j2.version>
     <logback.version>1.2.3</logback.version>
     <logstash-logback-encoder.version>6.3</logstash-logback-encoder.version>
     <lombok.version>1.18.16</lombok.version>
@@ -362,7 +363,7 @@
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
     <maven-apt-plugin.version>1.1.3</maven-apt-plugin.version>
     <maven-archetype-plugin.version>3.1.1</maven-archetype-plugin.version>
-    <maven-asciidoctor-plugin.version>1.5.8</maven-asciidoctor-plugin.version>
+    <maven-asciidoctor-plugin.version>2.1.0</maven-asciidoctor-plugin.version>
     <maven-assembly-plugin.version>3.2.0</maven-assembly-plugin.version>
     <maven-build-helper-plugin.version>3.0.0</maven-build-helper-plugin.version>
     <maven-changes-plugin.version>2.12.1</maven-changes-plugin.version>
@@ -533,7 +534,7 @@
     <snappy.version>1.1.7.5</snappy.version>
     <snippetsDirectory>${project.build.directory}/generated-snippets</snippetsDirectory>
     <soap-api.version>1.4.0</soap-api.version>
-    <solr.version>8.3.0</solr.version>
+    <solr.version>8.4.0</solr.version>
     <spark.version>2.4.1</spark.version>
     <splunk.version>1.6.5.0</splunk.version>
     <spock.version>1.0-groovy-2.4</spock.version>
@@ -580,15 +581,15 @@
     <spring-security-oauth.version>2.3.8.RELEASE</spring-security-oauth.version>
     <spring-security-saml.version>1.0.4.RELEASE</spring-security-saml.version>
     <spring-security.version>5.2.8.RELEASE</spring-security.version>
-    <spring-session-bom.version>Corn-SR2</spring-session-bom.version>
-    <spring-session-data-mongodb.version>2.2.3.RELEASE</spring-session-data-mongodb.version>
-    <spring-session.version>2.2.0.M3</spring-session.version>
+    <spring-session-bom.version>Corn-SR5</spring-session-bom.version>
+    <spring-session-data-mongodb.version>2.2.5.RELEASE</spring-session-data-mongodb.version>
+    <spring-session.version>2.2.5.RELEASE</spring-session.version>
     <spring-shell.version>3.0.0.BUILD-SNAPSHOT</spring-shell.version>
     <spring-social-facebook.version>3.0.0.M3</spring-social-facebook.version>
     <spring-social-google.version>1.0.0.RELEASE</spring-social-google.version>
     <spring-social-linkedin.version>2.0.0.M3</spring-social-linkedin.version>
     <spring-social.version>2.0.0.M4</spring-social.version>
-    <spring-statemachine-boot.version>2.0.0.M4</spring-statemachine-boot.version>
+    <!-- spring-statemachine-boot.version>2.0.0.M4</spring-statemachine-boot.version -->
     <spring-statemachine.version>2.2.2.RELEASE</spring-statemachine.version>
     <spring-vault.version>2.2.1.RELEASE</spring-vault.version>
     <spring-web-flow.version>2.5.0.RELEASE</spring-web-flow.version>
@@ -655,7 +656,7 @@
     <xmlunit.version>1.6</xmlunit.version>
     <xmlunit2.version>2.6.4</xmlunit2.version>
     <xom.version>1.3.2</xom.version>
-    <xstream.version>1.4.11.1</xstream.version>
+    <xstream.version>1.4.15</xstream.version>
     <xws-security.version>3.0</xws-security.version>
     <yammer-metrics.version>2.2.0</yammer-metrics.version>
     <yarn.version>1.12.3</yarn.version>
@@ -747,6 +748,11 @@
         <version>${aws-lambda-java-log4j2.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.ardoq</groupId>
+        <artifactId>java-api-client</artifactId>
+        <version>${ardoq.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.atlassian.connect</groupId>
         <artifactId>atlassian-connect-spring-boot-jpa-starter</artifactId>
         <version>${atlassian-connect-spring-boot.version}</version>
@@ -792,6 +798,7 @@
         <artifactId>shamir</artifactId>
         <version>${shamir.version}</version>
       </dependency>
+
       <dependency>
         <groupId>com.couchbase.client</groupId>
         <artifactId>couchbase-client</artifactId>
@@ -1515,11 +1522,6 @@
         <groupId>dev.morphia.morphia</groupId>
         <artifactId>core</artifactId>
         <version>${morphia-core.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>dom4j</groupId>
-        <artifactId>dom4j</artifactId>
-        <version>${dom4j.version}</version>
       </dependency>
       <dependency>
         <groupId>eu.europa.ec.joinup.sd-dss</groupId>
@@ -2635,6 +2637,12 @@
         <groupId>org.cryptonode.jncryptor</groupId>
         <artifactId>jncryptor</artifactId>
         <version>${jncryptor.version}</version>
+      </dependency>
+      <dependency>
+        <!-- switch groupId dom4j to org.dom4j to avoid CVE-2020-10683 and CVE-2018-1000632 -->
+        <groupId>org.dom4j</groupId>
+        <artifactId>dom4j</artifactId>
+        <version>${dom4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
@@ -4253,10 +4261,17 @@
         <artifactId>spring-social-web</artifactId>
         <version>${spring-social.version}</version>
       </dependency>
+      <!-- 
       <dependency>
         <groupId>org.springframework.statemachine</groupId>
         <artifactId>spring-statemachine-boot</artifactId>
         <version>${spring-statemachine-boot.version}</version>
+      </dependency>
+       -->
+      <dependency>
+        <groupId>org.springframework.statemachine</groupId>
+        <artifactId>spring-statemachine-autoconfigure</artifactId>
+        <version>${spring-statemachine.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.statemachine</groupId>

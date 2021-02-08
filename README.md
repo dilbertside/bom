@@ -22,17 +22,15 @@ In that effect, it should not be surprising some other framework are not represe
 
 # Versioning rules
 
-This Platform bill of materials is based on https://docs.spring.io/platform/docs/Cairo-SR6/reference/htmlsingle/
-
-As spring.io/platform is EOL, it also follows closely latest iteration of Spring Boot 2.1.x
+This Platform bill of materials is mostly based on Spring Boot Dependencies 2.2.x
 
 Versioning will follow closely that of Spring Framework and Spring Boot major release X.Y in X.Y.Z
 
 minor Z in X.Y.Z will be for incremental changes with dependent libraries which do not break a Spring Framework and Spring Boot build. 
 
-## migration to Spring Framework 5.1.x
+## migration to Spring Framework 5.2.x
 
-Migrating to Spring Framework 5.1.x (https://github.com/spring-projects/spring-framework/wiki/Migrating-to-Spring-Framework-5.1)
+Migrating to Spring Framework 5.2.x (https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x)
 
 
 ## Maven howto
@@ -41,9 +39,9 @@ Migrating to Spring Framework 5.1.x (https://github.com/spring-projects/spring-f
 
 #### Minimum version
 
-Maven 3.5.x https://maven.apache.org/
+Maven 3.6.1 https://maven.apache.org/
 
-Java 1.8
+Java 11
 
 ### POM
 
@@ -97,7 +95,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.1.17</version>
+    <version>5.2.0</version>
     <relativePath></relativePath>
   </parent>
 ```
