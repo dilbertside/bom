@@ -1,3 +1,4 @@
+dist: focal
 language: java
 jdk:
   - oraclejdk11
@@ -7,4 +8,4 @@ branches:
   except:
     - /^test.*/i
 
-install: 'mvn -Ptravis'
+install: 'mvn'

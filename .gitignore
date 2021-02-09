@@ -13,6 +13,7 @@ target/
 
 # Package Files #
 *.jar
+!.mvn/wrapper/maven-wrapper.jar
 *.war
 *.nar
 *.ear
@@ -29,3 +30,4 @@ hs_err_pid*
 .project
 .flattened-pom.xml
 *.backup
+pom-*.xml
