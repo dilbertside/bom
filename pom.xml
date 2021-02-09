@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.2.0</version>
+  <version>5.2.1</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials 
@@ -552,6 +552,7 @@
     <spring-cloud-starter-open-service-broker.version>3.0.4.RELEASE</spring-cloud-starter-open-service-broker.version>
     <spring-cloud-stream-releasetrain.version>Horsham.SR4</spring-cloud-stream-releasetrain.version>
     <spring-cloud-stream.version>2.2.1.RELEASE</spring-cloud-stream.version>
+    <spring-cloud-task.version>2.2.5.RELEASE</spring-cloud-task.version>
     <spring-data-commons.version>2.2.12.RELEASE</spring-data-commons.version>
     <spring-data-elasticsearch.version>3.2.12.RELEASE</spring-data-elasticsearch.version>
     <!--  spring-data-jdbc.version>2.2.12.RELEASE</spring-data-jdbc.version-->
@@ -609,6 +610,7 @@
     <sun-saaj.version>1.5.1</sun-saaj.version>
     <taglibs-standard.version>1.2.5</taglibs-standard.version>
     <testcontainers.version>1.14.3</testcontainers.version>
+    <testcontainers.version>1.12.0</testcontainers.version>
     <testng.version>7.0.0</testng.version>
     <threetenbp.version>1.4.0</threetenbp.version>
     <thymeleaf-extras-conditionalcomments.version>2.1.2.RELEASE</thymeleaf-extras-conditionalcomments.version>
@@ -2316,6 +2318,11 @@
         <version>${log4j2.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-web</artifactId>
+        <version>${log4j2.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-settings-builder</artifactId>
         <version>${maven-settings-builder.version}</version>
@@ -2729,6 +2736,11 @@
       <dependency>
         <groupId>org.elasticsearch</groupId>
         <artifactId>elasticsearch-core</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.elasticsearch.client</groupId>
+        <artifactId>elasticsearch-rest-client</artifactId>
         <version>${elasticsearch.version}</version>
       </dependency>
       <dependency>
@@ -3223,6 +3235,7 @@
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
+        <optional>true</optional>
       </dependency>
       <dependency>
         <groupId>org.quartz-scheduler</groupId>
@@ -3264,6 +3277,12 @@
         <artifactId>selenium-htmlunit-driver</artifactId>
         <version>${selenium-htmlunit-driver.version}</version>
         <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <artifactId>htmlunit</artifactId>
+            <groupId>net.sourceforge.htmlunit</groupId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
@@ -3856,6 +3875,13 @@
           </exclusion>
         </exclusions>
       </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-gcp-dependencies</artifactId>
+        <version>${spring-cloud-gcp.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <!-- If you intend to deploy the app on Heroku, add the following -->
       <!-- It is okay to add more than one cloud connector; the right one will
          be picked during runtime -->
@@ -3902,6 +3928,13 @@
         <type>pom</type>
         <scope>import</scope>
         <exclusions />
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-task-dependencies</artifactId>
+        <version>${spring-cloud-task.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework.data</groupId>
@@ -4354,8 +4387,33 @@
       </dependency>
       <dependency>
         <groupId>org.testcontainers</groupId>
+        <artifactId>elasticsearch</artifactId>
+        <version>${testcontainers.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>${testcontainers.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>kafka</artifactId>
+        <version>${testcontainers.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
         <artifactId>postgresql</artifactId>
         <version>${testcontainers.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>testcontainers</artifactId>
+        <version>${testcontainers.version}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.testcontainers</groupId>
@@ -5437,7 +5495,7 @@
                 <Automatic-Module-Name>${project.groupId}</Automatic-Module-Name>
                 <X-Compile-Source-JDK>${maven.compile.source}</X-Compile-Source-JDK>
                 <X-Compile-Target-JDK>${maven.compile.target}</X-Compile-Target-JDK>
-                <Built-By>thymeleaf</Built-By>
+                <Built-By>${project.artifactId}</Built-By>
               </manifestEntries>
             </archive>
           </configuration>
@@ -5446,6 +5504,25 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${maven-javadoc-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>attach-javadocs</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <source>${java.version}</source>
+            <tags>
+              <tag>
+                <name>apiNote</name>
+                <!-- apiNote tag for all places -->
+                <placement>a</placement>
+                <head>API note:</head>
+              </tag>
+            </tags>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
