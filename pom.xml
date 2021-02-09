@@ -460,7 +460,7 @@
     <neo4j.version>2.3.2</neo4j.version>
     <netty-tcnative.version>2.0.36.Final</netty-tcnative.version>
     <netty.version>4.1.58.Final</netty.version>
-    <nimbus.version>7.8</nimbus.version>
+    <nimbus.version>7.9</nimbus.version>
     <nio-multipart-parser.version>1.1.0</nio-multipart-parser.version>
     <node.version>v10.16.0</node.version>
     <nohttp-checkstyle.version>0.0.4.RELEASE</nohttp-checkstyle.version>
