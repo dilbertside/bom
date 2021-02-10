@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.2.1</version>
+  <version>5.2.2</version>
   <packaging>pom</packaging>
   <name>Platform bill of materials</name>
   <description>Platform bill of materials 
@@ -111,7 +111,7 @@
     <commons-configuration.version>1.10</commons-configuration.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
     <commons-dbcp2.version>2.7.0</commons-dbcp2.version>
-    <commons-dbs.version>1.0.11</commons-dbs.version>
+    <commons-dbs.version>1.1.1</commons-dbs.version>
     <commons-digester.version>2.1</commons-digester.version>
     <commons-fileupload.version>1.4</commons-fileupload.version>
     <commons-httpclient.version>4.5.13</commons-httpclient.version>
