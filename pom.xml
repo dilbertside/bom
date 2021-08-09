@@ -152,7 +152,7 @@
     <ehcache3.version>3.8.1</ehcache3.version>
     <el-impl.version>2.2.1-b05</el-impl.version>
     <elasticsearch-transport.version>7.9.3</elasticsearch-transport.version>
-    <elasticsearch.version>7.9.3</elasticsearch.version>
+    <elasticsearch.version>7.13.3</elasticsearch.version>
     <embedded-mongo.version>2.2.0</embedded-mongo.version>
     <embeddedtc.version>2.16</embeddedtc.version>
     <error_prone_annotations.version>2.3.4</error_prone_annotations.version>
