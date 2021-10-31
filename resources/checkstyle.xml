@@ -59,6 +59,12 @@
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
     </module>
+    <!-- Allow suppression with comments
+       // CHECKSTYLE:OFF
+       ... ignored content ...
+       // CHECKSTYLE:ON
+    -->
+    <module name="SuppressWithPlainTextCommentFilter"/>
     <module name="SuppressionCommentFilter"/>
 
     <module name="TreeWalker">
