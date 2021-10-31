@@ -22,7 +22,7 @@ In that effect, it should not be surprising some other framework are not represe
 
 # Versioning rules
 
-This Platform bill of materials is mostly based on Spring Boot Dependencies 2.2.x
+This Platform bill of materials is mostly based on Spring Boot Dependencies 2.3.x
 
 Versioning will follow closely that of Spring Framework and Spring Boot major release X.Y in X.Y.Z
 
@@ -39,7 +39,7 @@ Migrating to Spring Framework 5.2.x (https://github.com/spring-projects/spring-f
 
 #### Minimum version
 
-Maven 3.6.1 https://maven.apache.org/
+Maven 3.6.3 https://maven.apache.org/
 
 Java 11
 
@@ -95,7 +95,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.2.1</version>
+    <version>5.2.4</version>
     <relativePath></relativePath>
   </parent>
 ```
