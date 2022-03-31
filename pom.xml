@@ -547,7 +547,7 @@
     <spring-boot-admin.version>2.2.0</spring-boot-admin.version>
     <spring-boot-azure-ad.version>3.0.0</spring-boot-azure-ad.version>
     <spring-boot-data-jest.version>3.3.0.RELEASE</spring-boot-data-jest.version>
-    <spring-boot.version>2.2.13.RELEASE</spring-boot.version>
+    <spring-boot.version>2.5.12</spring-boot.version>
     <spring-cloud-connectors.version>2.0.7.RELEASE</spring-cloud-connectors.version>
     <spring-cloud-gcp.version>1.1.5.RELEASE</spring-cloud-gcp.version>
     <spring-cloud-releasetrain.version>Hoxton.SR4</spring-cloud-releasetrain.version>
