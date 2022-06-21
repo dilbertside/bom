@@ -453,7 +453,7 @@
     <morphia-core.version>1.5.3</morphia-core.version>
     <mssql-jdbc.version>7.4.1.jre8</mssql-jdbc.version>
     <myfaces.version>2.3.2</myfaces.version>
-    <mysql.version>8.0.22</mysql.version>
+    <mysql.version>8.0.28</mysql.version>
     <narayana.version>5.7.1.Final</narayana.version>
     <nekohtml.version>1.9.22</nekohtml.version>
     <neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
