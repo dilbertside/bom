@@ -560,7 +560,7 @@
     <!--  spring-data-jdbc.version>2.2.12.RELEASE</spring-data-jdbc.version-->
     <spring-data-jpa.version>2.2.13.RELEASE</spring-data-jpa.version>
     <spring-data-keyvalue.version>2.2.13.RELEASE</spring-data-keyvalue.version>
-    <spring-data-mongodb.version>2.2.13.RELEASE</spring-data-mongodb.version>
+    <spring-data-mongodb.version>3.3.5</spring-data-mongodb.version>
     <spring-data-neo4j.version>5.2.13.RELEASE</spring-data-neo4j.version>
     <spring-data-r2dbc.version>1.0.0.RELEASE</spring-data-r2dbc.version>
     <spring-data-redis.version>2.2.13.RELEASE</spring-data-redis.version>
