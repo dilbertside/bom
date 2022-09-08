@@ -583,7 +583,7 @@
     <spring-security-jwt.version>1.0.10.RELEASE</spring-security-jwt.version>
     <spring-security-oauth.version>2.3.8.RELEASE</spring-security-oauth.version>
     <spring-security-saml.version>1.0.4.RELEASE</spring-security-saml.version>
-    <spring-security.version>5.2.15.RELEASE</spring-security.version>
+    <spring-security.version>5.5.7</spring-security.version>
     <spring-session-bom.version>Corn-SR5</spring-session-bom.version>
     <spring-session-data-mongodb.version>2.2.5.RELEASE</spring-session-data-mongodb.version>
     <spring-session.version>2.2.5.RELEASE</spring-session.version>
