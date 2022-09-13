@@ -574,7 +574,7 @@
     <spring-cloud-starter-open-service-broker.version>3.0.4.RELEASE</spring-cloud-starter-open-service-broker.version>
     <spring-cloud-stream-releasetrain.version>Horsham.SR4</spring-cloud-stream-releasetrain.version>
     <spring-cloud-stream.version>2.2.1.RELEASE</spring-cloud-stream.version>
-    <spring-cloud-task.version>2.2.5.RELEASE</spring-cloud-task.version>
+    <spring-cloud-task.version>2.3.0</spring-cloud-task.version>
     <spring-cloud.version>2021.0.4</spring-cloud.version>
     <spring-data-bom.version>2021.1.6</spring-data-bom.version>
     <spring-data.version>2.6.6</spring-data.version>
