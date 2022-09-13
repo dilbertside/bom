@@ -22,15 +22,15 @@ In that effect, it should not be surprising some other framework are not represe
 
 # Versioning rules
 
-This Platform bill of materials is mostly based on Spring Boot Dependencies 2.3.x
+This Platform bill of materials is mostly based on Spring Boot Dependencies 2.6.x
 
 Versioning will follow closely that of Spring Framework and Spring Boot major release X.Y in X.Y.Z
 
 minor Z in X.Y.Z will be for incremental changes with dependent libraries which do not break a Spring Framework and Spring Boot build. 
 
-## migration to Spring Framework 5.2.x
+## migration to Spring Framework 5.3.x
 
-Migrating to Spring Framework 5.2.x (https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x)
+Migrating to Spring Framework 5.3.x (https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-5.x)
 
 
 ## Maven howto
@@ -95,7 +95,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.2.4</version>
+    <version>5.3.1</version>
     <relativePath></relativePath>
   </parent>
 ```
