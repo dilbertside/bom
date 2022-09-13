@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dilbertside</groupId>
   <artifactId>bom</artifactId>
-  <version>5.3.1-SNAPSHOT</version>
+  <version>5.3.1</version>
   <packaging>pom</packaging>
   <name>Platform Bill of Materials</name>
   <description>Java Spring Platform Bill of Materials 
@@ -187,7 +187,7 @@
     <gson.version>2.8.9</gson.version>
     <guava.version>30.1-jre</guava.version>
     <guice.version>4.2.2</guice.version>
-    <h2.version>1.4.200</h2.version>
+    <h2.version>2.1.210</h2.version>
     <hadoop.version>2.2.0</hadoop.version>
     <hamcrest-date.version>1.1.0</hamcrest-date.version>
     <hamcrest.version>2.2</hamcrest.version>
@@ -328,7 +328,7 @@
     <jsonassert-toomuchcoding.version>0.6.2</jsonassert-toomuchcoding.version>
     <jsonassert.version>1.5.1</jsonassert.version>
     <jsonschema2pojo-package>com.sti.types</jsonschema2pojo-package>
-    <jsoup.version>1.13.1</jsoup.version>
+    <jsoup.version>1.15.3</jsoup.version>
     <jsr250.version>1.0</jsr250.version>
     <jsr305.version>3.0.2</jsr305.version>
     <jstl.version>1.2</jstl.version>
@@ -353,8 +353,7 @@
     <liquibase-hibernate4.version>3.5</liquibase-hibernate4.version>
     <liquibase-hibernate5.version>3.6</liquibase-hibernate5.version>
     <liquibase-slf4j.version>2.0.0</liquibase-slf4j.version>
-    <liquibase.version>4.5.0</liquibase.version>
-    <log4j.version>1.2.17</log4j.version>
+    <liquibase.version>4.8.0</liquibase.version>
     <log4j2.version>2.17.2</log4j2.version>
     <logback.version>1.2.11</logback.version>
     <logstash-logback-encoder.version>6.3</logstash-logback-encoder.version>
@@ -498,10 +497,10 @@
     <paho-mqttv3-client.version>1.2.1</paho-mqttv3-client.version>
     <phantomjs-maven-plugin.version>0.7</phantomjs-maven-plugin.version>
     <pig.version>0.12.1</pig.version>
-    <poi.version>4.1.0</poi.version>
+    <poi.version>4.1.1</poi.version>
     <pooled-jms.version>1.2.4</pooled-jms.version>
     <postgis-jdbc.version>2.3.0</postgis-jdbc.version>
-    <postgresql.version>42.3.6</postgresql.version>
+    <postgresql.version>42.4.1</postgresql.version>
     <postgresql18.version>9.4-1208-jdbc42</postgresql18.version>
     <problem-spring-web.version>0.27.0</problem-spring-web.version>
     <problem.version>0.26.0</problem.version>
@@ -511,7 +510,7 @@
     <prometheus-pushgateway.version>0.12.0</prometheus-pushgateway.version>
     <prometheus-simpleclient.version>0.15.0</prometheus-simpleclient.version>
     <protobuf-java-format.version>1.4</protobuf-java-format.version>
-    <protobuf.version>3.11.4</protobuf.version>
+    <protobuf.version>3.16.1</protobuf.version>
     <quartz.version>2.3.2</quartz.version>
     <querydsl.version>5.0.0</querydsl.version>
     <r2dbc-bom.version>Arabba-SR13</r2dbc-bom.version>
@@ -549,7 +548,7 @@
     <slf4j.version>2.0.0</slf4j.version>
     <smack.version>3.2.1</smack.version>
     <smack4.version>4.1.8</smack4.version>
-    <snakeyaml.version>1.30</snakeyaml.version>
+    <snakeyaml.version>1.31</snakeyaml.version>
     <snappy.version>1.1.8.1</snappy.version>
     <snippetsDirectory>${project.build.directory}/generated-snippets</snippetsDirectory>
     <soap-api.version>1.4.0</soap-api.version>
@@ -657,7 +656,7 @@
     <wss4j.version>1.6.19</wss4j.version>
     <wss4j2.version>2.1.6</wss4j2.version>
     <xalan.version>2.7.2</xalan.version>
-    <xerces.version>2.12.0</xerces.version>
+    <xerces.version>2.12.2</xerces.version>
     <xmemcached-provider.version>4.1.2</xmemcached-provider.version>
     <xmemcached.version>2.4.6</xmemcached.version>
     <xml-apis.version>1.4.01</xml-apis.version>
@@ -666,7 +665,7 @@
     <xmlunit.version>1.6</xmlunit.version>
     <xmlunit2.version>2.8.4</xmlunit2.version>
     <xom.version>1.3.2</xom.version>
-    <xstream.version>1.4.15</xstream.version>
+    <xstream.version>1.4.19</xstream.version>
     <xws-security.version>3.0</xws-security.version>
     <yammer-metrics.version>2.2.0</yammer-metrics.version>
     <yarn.version>1.12.3</yarn.version>
@@ -2122,13 +2121,6 @@
         <artifactId>ldapsdk</artifactId>
         <version>${ldapsdk.version}</version>
       </dependency>
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
-        <scope>runtime</scope>
-      </dependency>
-
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
