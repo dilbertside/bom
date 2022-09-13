@@ -328,7 +328,7 @@
     <jsonassert-toomuchcoding.version>0.6.2</jsonassert-toomuchcoding.version>
     <jsonassert.version>1.5.1</jsonassert.version>
     <jsonschema2pojo-package>com.sti.types</jsonschema2pojo-package>
-    <jsoup.version>1.13.1</jsoup.version>
+    <jsoup.version>1.15.3</jsoup.version>
     <jsr250.version>1.0</jsr250.version>
     <jsr305.version>3.0.2</jsr305.version>
     <jstl.version>1.2</jstl.version>
