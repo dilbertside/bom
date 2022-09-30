@@ -542,7 +542,7 @@
     <rxjava2.version>2.2.21</rxjava2.version>
     <saaj-impl.version>1.5.3</saaj-impl.version>
     <sb-contrib.version>7.4.7</sb-contrib.version>
-    <scala.version>2.13.6</scala.version>
+    <scala.version>2.13.9</scala.version>
     <sd-dss.version>5.4</sd-dss.version>
     <selenium-htmlunit-driver.version>2.54.0</selenium-htmlunit-driver.version>
     <selenium-htmlunit.version>2.54.0</selenium-htmlunit.version>
