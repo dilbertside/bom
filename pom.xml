@@ -513,7 +513,7 @@
     <prometheus-pushgateway.version>0.12.0</prometheus-pushgateway.version>
     <prometheus-simpleclient.version>0.15.0</prometheus-simpleclient.version>
     <protobuf-java-format.version>1.4</protobuf-java-format.version>
-    <protobuf.version>3.16.1</protobuf.version>
+    <protobuf.version>3.16.3</protobuf.version>
     <pulumi-aws.version>5.13.0</pulumi-aws.version>
     <pulumi-azure.version>5.18.0</pulumi-azure.version>
     <pulumi-gcp.version>6.36.0</pulumi-gcp.version>
