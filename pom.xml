@@ -60,7 +60,7 @@
     <apiguardian-api.version>1.1.2</apiguardian-api.version>
     <appengine-sdk.version>1.9.98</appengine-sdk.version>
     <appengine.version>1.9.76</appengine.version>
-    <archunit-junit5.version>0.17.0</archunit-junit5.version>
+    <archunit-junit5.version>0.22.0</archunit-junit5.version>
     <ardoq.version>1.26</ardoq.version>
     <artemis.version>2.19.1</artemis.version>
     <asciidoctorj-pdf.version>1.5.4</asciidoctorj-pdf.version>
@@ -93,13 +93,13 @@
     <byte-buddy.version>1.12.10</byte-buddy.version>
     <c3p0.version>0.9.5.4</c3p0.version>
     <cache-api.version>1.1.1</cache-api.version>
-    <caffeine.version>2.9.3</caffeine.version>
+    <caffeine.version>3.1.1</caffeine.version>
     <camel-spring-boot-starter.version>3.17.0</camel-spring-boot-starter.version>
     <cas-client.version>3.5.1</cas-client.version>
     <cassandra-driver.version>4.13.0</cassandra-driver.version>
     <castor.version>1.4.1</castor.version>
     <cglib.version>3.3.0</cglib.version>
-    <checker-qual.version>3.5.0</checker-qual.version>
+    <checker-qual.version>3.21.0</checker-qual.version>
     <checkstyle.version>8.39</checkstyle.version>
     <classmate.version>1.5.1</classmate.version>
     <commonj.version>1.1.1</commonj.version>
@@ -194,6 +194,7 @@
     <hazelcast-hibernate5.version>2.2.1</hazelcast-hibernate5.version>
     <hazelcast.version>4.2.5</hazelcast.version>
     <hbase.version>0.96.2-hadoop2</hbase.version>
+    <hdrhistogram.version>2.1.12</hdrhistogram.version>
     <hessian.version>4.0.62</hessian.version>
     <hibernate-validator.version>6.2.4.Final</hibernate-validator.version>
     <hibernate.version>5.6.10.Final</hibernate.version>
@@ -214,12 +215,12 @@
     <ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
     <infinispan.version>12.1.12.Final</infinispan.version>
     <influxdb-java.version>2.22</influxdb-java.version>
-    <istack-commons.version>3.0.12</istack-commons.version>
+    <istack-commons.version>4.1.1</istack-commons.version>
     <itext.version>2.1.7</itext.version>
     <jackson-bom.version>${jackson.version}</jackson-bom.version>
     <jackson-datatype-problem.version>0.25.0</jackson-datatype-problem.version>
     <jackson.version>2.13.3</jackson.version>
-    <jakarta-activation.version>1.2.2</jakarta-activation.version>
+    <jakarta-activation.version>2.1.0</jakarta-activation.version>
     <jakarta-annotation.version>1.3.5</jakarta-annotation.version>
     <jakarta-jms.version>2.0.3</jakarta-jms.version>
     <jakarta-json-bind.version>1.0.2</jakarta-json-bind.version>
@@ -234,7 +235,7 @@
     <jakarta-validation.version>2.0.2</jakarta-validation.version>
     <jakarta-websocket.version>1.1.2</jakarta-websocket.version>
     <jakarta-ws-rs.version>2.1.6</jakarta-ws-rs.version>
-    <jakarta-xml-bind.version>2.3.3</jakarta-xml-bind.version>
+    <jakarta-xml-bind.version>4.0.0</jakarta-xml-bind.version>
     <jakarta-xml-soap.version>1.4.2</jakarta-xml-soap.version>
     <jakarta-xml-ws.version>2.3.3</jakarta-xml-ws.version>
     <jamon.version>2.81</jamon.version>
@@ -279,7 +280,7 @@
     <javax.inject.version>1</javax.inject.version>
     <javax.mail-api.version>1.6.2</javax.mail-api.version>
     <jaxb-api.version>2.3.3</jaxb-api.version>
-    <jaxb-runtime.version>2.3.6</jaxb-runtime.version>
+    <jaxb-runtime.version>4.0.0</jaxb-runtime.version>
     <jaxen.version>1.2.0</jaxen.version>
     <jaxws-api.version>2.3.1</jaxws-api.version>
     <jaxws-ri.version>2.3.2</jaxws-ri.version>
@@ -353,7 +354,7 @@
     <liquibase-hibernate4.version>3.5</liquibase-hibernate4.version>
     <liquibase-hibernate5.version>3.6</liquibase-hibernate5.version>
     <liquibase-slf4j.version>2.0.0</liquibase-slf4j.version>
-    <liquibase.version>4.8.0</liquibase.version>
+    <liquibase.version>4.15.0</liquibase.version>
     <log4j2.version>2.17.2</log4j2.version>
     <logback.version>1.2.11</logback.version>
     <logstash-logback-encoder.version>6.3</logstash-logback-encoder.version>
@@ -365,7 +366,7 @@
     <mail.smtp.port>1025</mail.smtp.port>
     <mail.smtp.user/>
     <management.port>8888</management.port>
-    <mapstruct.version>1.4.2.Final</mapstruct.version>
+    <mapstruct.version>1.5.3.Final</mapstruct.version>
     <mariadb.version>2.7.6</mariadb.version>
     <maven-android-plugin.version>4.6.0</maven-android-plugin.version>
     <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
@@ -378,7 +379,7 @@
     <maven-build-helper-plugin.version>3.2.0</maven-build-helper-plugin.version>
     <maven-changes-plugin.version>2.12.1</maven-changes-plugin.version>
     <maven-checkstyle-config-location>${project.build.directory}/quality-resources/checkstyle.xml</maven-checkstyle-config-location>
-    <maven-checkstyle-plugin.version>3.1.0</maven-checkstyle-plugin.version>
+    <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
     <maven-checkstyle-suppressions-location>${project.build.directory}/quality-resources/checkstyle-suppressions.xml</maven-checkstyle-suppressions-location>
     <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
     <maven-cobertura-plugin.version>2.7</maven-cobertura-plugin.version>
@@ -400,14 +401,14 @@
     <maven-flatten-plugin.version>1.2.7</maven-flatten-plugin.version>
     <maven-frontend-plugin.version>1.11.0</maven-frontend-plugin.version>
     <maven-gatling-plugin.version>3.1.1</maven-gatling-plugin.version>
-    <maven-git-commit-id-plugin.version>4.9.10</maven-git-commit-id-plugin.version>
+    <maven-git-commit-id-plugin.version>5.0.0</maven-git-commit-id-plugin.version>
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <maven-help-plugin.version>3.2.0</maven-help-plugin.version>
     <maven-heroku-plugin.version>2.0.10</maven-heroku-plugin.version>
     <maven-idea-plugin.version>2.2.1</maven-idea-plugin.version>
     <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
     <maven-invoker-plugin.version>3.2.2</maven-invoker-plugin.version>
-    <maven-jacoco-plugin.version>0.8.4</maven-jacoco-plugin.version>
+    <maven-jacoco-plugin.version>0.8.8</maven-jacoco-plugin.version>
     <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
     <maven-jasmine-plugin.version>2.0</maven-jasmine-plugin.version>
     <maven-javadoc-plugin.version>3.3.2</maven-javadoc-plugin.version>
@@ -432,7 +433,7 @@
     <maven-settings-builder.version>3.6.1</maven-settings-builder.version>
     <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
     <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
-    <maven-sonar-plugin.version>3.8.0.2131</maven-sonar-plugin.version>
+    <maven-sonar-plugin.version>3.9.1.2184</maven-sonar-plugin.version>
     <maven-sortpom-plugin.version>3.2.0</maven-sortpom-plugin.version>
     <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
     <maven-spotbugs-plugin.version>${spotbugs.version}</maven-spotbugs-plugin.version>
@@ -476,7 +477,7 @@
     <nimbus.version>9.14</nimbus.version>
     <nio-multipart-parser.version>1.1.0</nio-multipart-parser.version>
     <node.version>v14.15.0</node.version>
-    <nohttp-checkstyle.version>0.0.4.RELEASE</nohttp-checkstyle.version>
+    <nohttp-checkstyle.version>0.0.10</nohttp-checkstyle.version>
     <npm.version>6.14.11</npm.version>
     <oauth2-oidc-sdk.version>9.19</oauth2-oidc-sdk.version>
     <objenesis.version>3.2</objenesis.version>
@@ -565,7 +566,7 @@
     <spotbugs.version>4.2.0</spotbugs.version>
     <spring-amqp.version>2.4.6</spring-amqp.version>
     <spring-android.version>2.0.0.M4</spring-android.version>
-    <spring-batch.version>4.3.6</spring-batch.version>
+    <spring-batch.version>4.3.7</spring-batch.version>
     <spring-boot-admin.version>2.6.8</spring-boot-admin.version>
     <spring-boot-azure-ad.version>3.0.0</spring-boot-azure-ad.version>
     <spring-boot-azure.version>3.9.0</spring-boot-azure.version>
@@ -581,11 +582,11 @@
     <spring-cloud-stream.version>2.2.1.RELEASE</spring-cloud-stream.version>
     <spring-cloud-task.version>2.2.5.RELEASE</spring-cloud-task.version>
     <spring-cloud.version>2021.0.4</spring-cloud.version>
-    <spring-data-bom.version>2021.1.6</spring-data-bom.version>
-    <spring-data.version>2.6.6</spring-data.version>
+    <!-- https://spring.io/blog/2022/09/19/spring-data-2022-0-0-m6-2021-2-3-and-2021-1-7-released -->
+    <spring-data-bom.version>2021.1.7</spring-data-bom.version>
     <spring-framework.version>${spring.version}</spring-framework.version>
     <spring-hateoas.version>1.4.4</spring-hateoas.version>
-    <spring-integration.version>5.5.14</spring-integration.version>
+    <spring-integration.version>5.5.15</spring-integration.version>
     <spring-kafka.version>2.8.8</spring-kafka.version>
     <spring-ldap.version>2.3.8.RELEASE</spring-ldap.version>
     <spring-loaded.version>1.2.8.RELEASE</spring-loaded.version>
@@ -594,6 +595,7 @@
     <spring-plugin.version>1.2.0.RELEASE</spring-plugin.version>
     <spring-restdocs.version>2.0.6.RELEASE</spring-restdocs.version>
     <spring-retry.version>1.3.3</spring-retry.version>
+    <spring-security-oauth2-authorization-server.version>0.4.0-M2</spring-security-oauth2-authorization-server.version>
     <spring-security.version>5.6.7</spring-security.version>
     <spring-session-bom.version>2021.1.3</spring-session-bom.version>
     <spring-session.version>2.2.5.RELEASE</spring-session.version>
@@ -602,8 +604,7 @@
     <spring-social-google.version>1.0.0.RELEASE</spring-social-google.version>
     <spring-social-linkedin.version>2.0.0.M3</spring-social-linkedin.version>
     <spring-social.version>2.0.0.M4</spring-social.version>
-    <!-- spring-statemachine-boot.version>2.0.0.M4</spring-statemachine-boot.version -->
-    <spring-statemachine.version>2.2.2.RELEASE</spring-statemachine.version>
+    <spring-statemachine.version>3.2.0</spring-statemachine.version>
     <spring-vault.version>2.2.1.RELEASE</spring-vault.version>
     <spring-web-flow.version>2.5.0.RELEASE</spring-web-flow.version>
     <spring-web-services.version>${spring-ws.version}</spring-web-services.version>
@@ -636,8 +637,8 @@
     <tomcat.version>9.0.65</tomcat.version>
     <tomcat7Version>7.0.94</tomcat7Version>
     <twilio.version>7.41.1</twilio.version>
-    <txw2.version>2.3.6</txw2.version>
-    <typesafe-config.version>1.4.1</typesafe-config.version>
+    <txw2.version>4.0.0</txw2.version>
+    <typesafe-config.version>1.4.2</typesafe-config.version>
     <typica.version>1.3</typica.version>
     <tyrus.version>1.3.5</tyrus.version>
     <unboundid-ldapsdk.version>4.0.14</unboundid-ldapsdk.version>
@@ -679,7 +680,7 @@
     <zipkin-brave.version>5.13.3</zipkin-brave.version>
     <zookeeper.version>3.6.3</zookeeper.version>
     <zstd-jni.version>1.5.0-2</zstd-jni.version>
-    <zxing.version>3.4.0</zxing.version>
+    <zxing.version>3.5.0</zxing.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -4149,6 +4150,11 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-oauth2-authorization-server</artifactId>
+        <version>${spring-security-oauth2-authorization-server.version}</version>
+      </dependency>
       <!-- Spring Cloud
         <dependency>
         <groupId>org.springframework.cloud</groupId>
@@ -4215,42 +4221,12 @@
         <artifactId>spring-social-web</artifactId>
         <version>${spring-social.version}</version>
       </dependency>
-      <!--
-        <dependency>
-        <groupId>org.springframework.statemachine</groupId>
-        <artifactId>spring-statemachine-boot</artifactId>
-        <version>${spring-statemachine-boot.version}</version>
-        </dependency>
-      -->
       <dependency>
         <groupId>org.springframework.statemachine</groupId>
-        <artifactId>spring-statemachine-autoconfigure</artifactId>
+        <artifactId>spring-statemachine-bom</artifactId>
         <version>${spring-statemachine.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.statemachine</groupId>
-        <artifactId>spring-statemachine-core</artifactId>
-        <version>${spring-statemachine.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.statemachine</groupId>
-        <artifactId>spring-statemachine-data-jpa</artifactId>
-        <version>${spring-statemachine.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.statemachine</groupId>
-        <artifactId>spring-statemachine-data-redis</artifactId>
-        <version>${spring-statemachine.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.statemachine</groupId>
-        <artifactId>spring-statemachine-test</artifactId>
-        <version>${spring-statemachine.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.statemachine</groupId>
-        <artifactId>spring-statemachine-uml</artifactId>
-        <version>${spring-statemachine.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework.vault</groupId>
@@ -4549,6 +4525,11 @@
         <groupId>xom</groupId>
         <artifactId>xom</artifactId>
         <version>${xom.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hdrhistogram</groupId>
+        <artifactId>HdrHistogram</artifactId>
+        <version>${hdrhistogram.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -5337,10 +5318,16 @@
                 <version>${lombok.version}</version>
               </path>
               <path>
+                <!-- https://springframework.guru/using-mapstruct-with-project-lombok/ -->
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
               </path>
+              <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok-mapstruct-binding</artifactId>
+                <version>0.2.0</version>
+              </dependency>
               <!-- For JPA static metamodel generation -->
               <path>
                 <groupId>org.hibernate</groupId>
@@ -5353,6 +5340,9 @@
                 <version>${jaxb-runtime.version}</version>
               </path>
             </annotationProcessorPaths>
+            <compilerArgs>
+              <compilerArg>-Amapstruct.defaultComponentModel=spring</compilerArg>
+            </compilerArgs>
           </configuration>
         </plugin>
         <plugin>
