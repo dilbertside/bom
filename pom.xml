@@ -656,7 +656,7 @@
     <websphere-uow.version>6.0.2.17</websphere-uow.version>
     <weka.version>3.8.2</weka.version>
     <wiremock.version>2.33.2</wiremock.version>
-    <woodstox-fasterxml.version>6.2.4</woodstox-fasterxml.version>
+    <woodstox-fasterxml.version>6.4.0</woodstox-fasterxml.version>
     <woodstox.version>6.2.4</woodstox.version>
     <wro4j.version>1.8.0</wro4j.version>
     <wsdl4j.version>1.6.3</wsdl4j.version>
