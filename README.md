@@ -39,7 +39,7 @@ Migrating to Spring Framework 5.3.x (https://github.com/spring-projects/spring-f
 
 #### Minimum version
 
-Maven 3.6.3 https://maven.apache.org/
+Maven 3.8.5 https://maven.apache.org/
 
 Java 11
 
@@ -95,7 +95,7 @@ Modify in your ~/.m2/settings.xml along those lines, or download following templ
   <parent>
     <groupId>com.github.dilbertside</groupId>
     <artifactId>bom</artifactId>
-    <version>5.3.1</version>
+    <version>5.3.2-SNAPSHOT</version>
     <relativePath></relativePath>
   </parent>
 ```
